@@ -1,0 +1,32 @@
+@import "../globals";
+
+.calendar {
+  background-color: $color-dark;
+  padding: 35px $px-sm;
+  color: white;
+
+  &__form {
+
+    &__label {
+      font-weight: 700;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    &__input {
+      margin-bottom: 25px;
+      border: none;
+      outline: none;
+      border-bottom: 2px solid $color-secondary;
+      background-color: transparent;
+      width: 100%;
+      padding: 10px;
+      color: gray;
+    }
+
+    &__btn {
+      margin-top: 20px;
+      width: 250px;
+    }
+  }
+}
