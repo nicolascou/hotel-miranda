@@ -210,6 +210,70 @@
   width: 250px;
 }
 
+.d-none {
+  display: none;
+}
+
+.btn-icon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: 2.8px;
+  height: 50px;
+}
+.btn--yellow {
+  background-color: #BEAD8E;
+}
+.btn--transparent {
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  background-color: transparent;
+}
+
+.aboutus__main {
+  margin-top: 60px;
+  background-color: #F9F9F9;
+  padding: 30px 20px;
+  padding-bottom: 200px;
+}
+.aboutus__main__aboutus {
+  color: #777777;
+  letter-spacing: 2.8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.aboutus__main__title {
+  font-family: "Old Standard TT";
+  color: #111;
+  font-size: 46px;
+  margin-top: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+.aboutus__main__text {
+  margin: 16px 0;
+  color: #777;
+  font-size: 14px;
+  line-height: 24px;
+}
+.aboutus__main__btn {
+  margin-top: 24px;
+  width: 215px;
+}
+
 * {
   margin: 0;
   padding: 0;
