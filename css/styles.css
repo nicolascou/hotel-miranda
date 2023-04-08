@@ -8,10 +8,31 @@
   cursor: pointer;
 }
 
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn--yellow {
+  background-color: #BEAD8E;
+}
+.btn--transparent {
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  background-color: transparent;
+}
+
 .header {
   background-color: white;
   height: 70px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .header__hamburger {
   width: 20px;
@@ -25,11 +46,27 @@
   padding: 0 20px;
 }
 .header__main {
-  height: 100%;
-  flex-basis: 60%;
+  flex-basis: 50%;
 }
-.header__main__img {
-  margin-top: 5px;
+.header__main__h {
+  height: 35px;
+  box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.25);
+  width: 35px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__main__title {
+  height: fit-content;
+  margin-left: 10px;
+}
+.header__main__title__hotel {
+  font-size: 14px;
+  font-weight: bold;
+}
+.header__main__title__miranda {
+  font-size: 14px;
 }
 .header__btns__icon {
   height: 20px;
@@ -38,8 +75,8 @@
 }
 .header__navbar {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
-  padding: 0 20px;
-  padding-top: 30px;
+  padding: 30px 20px 10px 20px;
+  background-color: white;
 }
 .header__navbar ul {
   display: flex;
@@ -51,6 +88,58 @@
   text-decoration: none;
   color: black;
   font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.d-none {
+  display: none;
+}
+
+.btn-icon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn--yellow {
+  background-color: #BEAD8E;
+}
+.btn--transparent {
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  background-color: transparent;
+}
+
+.hero {
+  margin-top: 70px;
+  background-color: #333333;
+  padding: 65px 20px;
+  color: white;
+}
+.hero__subtitle {
+  font-size: 13px;
+  letter-spacing: 2.8px;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+.hero__title {
+  font-size: 46px;
+  font-weight: 400;
+  font-family: "Old Standard TT", sans-serif;
+  margin-bottom: 40px;
+}
+.hero__btn {
+  width: 210px;
+  height: 50px;
   margin-bottom: 20px;
 }
 

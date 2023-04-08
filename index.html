@@ -10,18 +10,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
     <div class="header__mobile-flex">
-      <button class="header__hamburger btn-icon">
+      <button class="header__hamburger btn-icon" id="hamburgerBtn">
         <svg width="100%" height="100%" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"/></svg>
       </button>
-      <button class="header__hamburger d-none btn-icon">
+      <button class="header__hamburger d-none btn-icon" id="closeMenu">
         <svg width="100%" height="100%" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg>
       </button>
       <div class="header__main">
-        <img class="header__main__img" src="resources/img/title-icon.png" alt="hotel miranda">
+        <div style="display: flex; align-items: center; justify-content: flex-start;">
+          <div class="header__main__h">H</div>
+          <div class="header__main__title">
+            <p class="header__main__title__hotel">HOTEL</p>
+            <p class="header__main__title__miranda">MIRANDA</p>
+          </div>
+        </div>
       </div>
       <div class="header__btns">
         <button class="header__btns__icon btn-icon">
@@ -45,5 +55,21 @@
       </ul>
     </nav>
   </header>
+
+  <div class="hero">
+    <p class="hero__subtitle">THE ULTIMATE LUXURY EXPERIENCE</p>
+    <h2 class="hero__title">The Perfect Base For You</h2>
+    <div class="hero__btns__btn">
+      <a class="hero__btn btn btn--yellow" href="">
+        TAKE A TOUR
+      </a>
+      <a class="hero__btn btn btn--transparent" href="">
+        LEARN MORE
+      </a>
+    </div>
+  </div>
+
+
+  <script src="resources/js/script.js"></script>
 </body>
 </html>

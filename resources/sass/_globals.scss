@@ -1,4 +1,9 @@
-$color-primary: #fff;
+$color-primary: #333333;
+$color-secondary: #BEAD8E;
+$color-dark: #222222;
+$color-bg-gray: #F9F9F9;
+
+$px-sm: 20px;
 
 
 .d-none {
@@ -9,4 +14,24 @@ $color-primary: #fff;
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &--yellow {
+    background-color: $color-secondary;
+  }
+
+  &--transparent {
+    border: 2px solid rgba(255, 255, 255, 0.33);
+    background-color: transparent;
+  }
 }
