@@ -38,6 +38,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 9;
 }
 .header__hamburger {
   width: 20px;
@@ -243,6 +244,9 @@
   background-color: transparent;
 }
 
+.aboutus {
+  margin-bottom: 60px;
+}
 .aboutus__main {
   margin-top: 60px;
   background-color: #F9F9F9;
@@ -277,13 +281,15 @@
   margin-top: -40%;
   width: 80%;
   margin: 0 auto;
-  margin-top: -130px;
+  margin-top: 45px;
 }
 .aboutus__card__img {
   width: 100%;
   height: 320px;
+  object-fit: cover;
 }
 .aboutus__card__content {
+  margin-top: -3px;
   text-align: center;
   padding: 50px 0;
   position: relative;
@@ -310,6 +316,12 @@
   color: #111;
   width: 70%;
   margin: 0 auto;
+}
+.aboutus__card__content--dark-bg {
+  background-color: #222222;
+}
+.aboutus__card__content--dark-bg h3, .aboutus__card__content--dark-bg p {
+  color: white;
 }
 
 * {
