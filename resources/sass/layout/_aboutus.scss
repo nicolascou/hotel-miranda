@@ -35,4 +35,49 @@
       width: 215px;
     }
   }
+
+  &__card {
+    margin-top: -40%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -130px;
+
+    &__img {
+      width: 100%;
+      height: 320px;
+    }
+
+    &__content {
+      text-align: center;
+      padding: 50px 0;
+      position: relative;
+      box-shadow: 0px 8px 16px rgba(34, 34, 34, 0.02);
+
+      &__icon {
+        margin-bottom: 20px;
+      }
+
+      &__icon-copy {
+        position: absolute;
+        opacity: .1;
+        left: 48%;
+      }
+
+      &__title {
+        font-family: 'Old Standard TT';
+        font-size: 30px;
+        font-weight: 400;
+        color: #111;
+        margin-bottom: 15px;
+      }
+
+      &__text {
+        font-size: 14px;
+        line-height: 22px;
+        color: #111;
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+  }
 }
