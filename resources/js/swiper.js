@@ -15,6 +15,7 @@ new Swiper('.rooms__swiper', {
 new Swiper('.facilities__swiper', {
   direction: 'horizontal',
   pagination: {
-    el: '.swiper-pagination'
+    el: '.swiper-pagination',
+    clickable: true
   }
 });

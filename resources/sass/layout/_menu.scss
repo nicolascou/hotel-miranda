@@ -1,0 +1,36 @@
+@import "../globals";
+
+.menu-section {
+  padding: 0 $px-sm;
+
+  &__intro {
+    color: #777;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+
+    &__option {
+      display: flex;
+
+      &__img {
+        width: 50%;
+        margin-right: 30px;
+      }
+
+      &__content {
+
+        &__title {
+          font-weight: 400;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

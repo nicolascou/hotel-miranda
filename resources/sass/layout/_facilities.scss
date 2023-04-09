@@ -3,11 +3,12 @@
 .facilities {
   text-align: center;
   padding-top: 60px;
+  overflow-x: hidden;
   
   &__intro {
     color: #777777;
     letter-spacing: 2.8px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     margin-bottom: 24px;
   }
@@ -54,7 +55,7 @@
         font-size: 14px;
         line-height: 24px;
         color: #777777;
-        margin-bottom: 40px;
+        margin-bottom: 46px;
       }
     }
 

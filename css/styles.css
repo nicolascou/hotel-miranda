@@ -31,6 +31,17 @@
   background-color: transparent;
 }
 
+.section-intro {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: 46px;
+}
+
 .header {
   background-color: white;
   height: 70px;
@@ -130,6 +141,17 @@
   background-color: transparent;
 }
 
+.section-intro {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: 46px;
+}
+
 .hero {
   margin-top: 70px;
   background-color: #333333;
@@ -184,6 +206,17 @@
 .btn--transparent {
   border: 2px solid rgba(255, 255, 255, 0.33);
   background-color: transparent;
+}
+
+.section-intro {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: 46px;
 }
 
 .calendar {
@@ -242,6 +275,17 @@
 .btn--transparent {
   border: 2px solid rgba(255, 255, 255, 0.33);
   background-color: transparent;
+}
+
+.section-intro {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: 46px;
 }
 
 .aboutus {
@@ -356,6 +400,17 @@
 .btn--transparent {
   border: 2px solid rgba(255, 255, 255, 0.33);
   background-color: transparent;
+}
+
+.section-intro {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: 46px;
 }
 
 .rooms {
@@ -490,6 +545,17 @@
   background-color: transparent;
 }
 
+.section-intro {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: 46px;
+}
+
 .intro-video {
   background-color: #333333;
   padding: 48px 20px;
@@ -557,14 +623,26 @@
   background-color: transparent;
 }
 
+.section-intro {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: 46px;
+}
+
 .facilities {
   text-align: center;
   padding-top: 60px;
+  overflow-x: hidden;
 }
 .facilities__intro {
   color: #777777;
   letter-spacing: 2.8px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   margin-bottom: 24px;
 }
@@ -606,11 +684,81 @@
   font-size: 14px;
   line-height: 24px;
   color: #777777;
-  margin-bottom: 40px;
+  margin-bottom: 46px;
 }
 .facilities__bottom-img {
   width: 100px;
   margin-left: calc(100% - 80px);
+}
+
+.d-none {
+  display: none;
+}
+
+.btn-icon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: 2.8px;
+  height: 50px;
+}
+.btn--yellow {
+  background-color: #BEAD8E;
+}
+.btn--transparent {
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  background-color: transparent;
+}
+
+.section-intro {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: 46px;
+}
+
+.menu-section {
+  padding: 0 20px;
+}
+.menu-section__intro {
+  color: #777;
+  margin-bottom: 24px;
+}
+.menu-section__title {
+  margin-bottom: 24px;
+}
+.menu-section__menu {
+  display: flex;
+  flex-direction: column;
+}
+.menu-section__menu__option {
+  display: flex;
+}
+.menu-section__menu__option__img {
+  width: 50%;
+  margin-right: 30px;
+}
+.menu-section__menu__option__content__title {
+  font-weight: 400;
+  font-size: 24px;
 }
 
 * {
@@ -622,6 +770,10 @@
 
 h1, h2, h3, h4 {
   font-family: "Old Standard TT", sans-serif;
+}
+
+:root {
+  --swiper-pagination-color: #BEAD8E;
 }
 
 /*# sourceMappingURL=styles.css.map */
