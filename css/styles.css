@@ -316,6 +316,7 @@
   color: #111;
   width: 70%;
   margin: 0 auto;
+  font-family: "Roboto", sans-serif;
 }
 .aboutus__card__content--dark-bg {
   background-color: #222222;
@@ -372,6 +373,20 @@
   font-family: "Old Standard TT", sans-serif;
   margin: 24px 0;
 }
+.rooms__rect {
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
+  margin: 0 auto;
+  margin-bottom: -20px;
+  z-index: 6;
+  padding: 10px 20px;
+  width: 70%;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .rooms__swiper {
   width: 100%;
   height: 250px;
@@ -409,6 +424,38 @@
   right: 10px;
   background-color: #BEAD8E;
   color: white;
+}
+.rooms__offer {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -20px;
+  z-index: 5;
+}
+.rooms__offer__title {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: -1.2px;
+  color: #222222;
+  margin-bottom: 12px;
+}
+.rooms__offer__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777;
+  margin-bottom: 15px;
+}
+.rooms__offer__price {
+  color: #BEAD8E;
+  font-size: 32px;
+  font-weight: 700;
+}
+.rooms__offer__price__small-txt {
+  font-size: 14px;
 }
 
 * {
