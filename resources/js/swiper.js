@@ -11,3 +11,10 @@ new Swiper('.rooms__swiper', {
     nextEl: '.rooms__swiper__next-btn',
   },
 });
+
+new Swiper('.facilities__swiper', {
+  direction: 'horizontal',
+  pagination: {
+    el: '.swiper-pagination'
+  }
+});

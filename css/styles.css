@@ -524,6 +524,95 @@
   width: 215px;
 }
 
+.d-none {
+  display: none;
+}
+
+.btn-icon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: 2.8px;
+  height: 50px;
+}
+.btn--yellow {
+  background-color: #BEAD8E;
+}
+.btn--transparent {
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  background-color: transparent;
+}
+
+.facilities {
+  text-align: center;
+  padding-top: 60px;
+}
+.facilities__intro {
+  color: #777777;
+  letter-spacing: 2.8px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.facilities__title {
+  color: #111;
+  font-size: 46px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+.facilities__swiper {
+  margin-bottom: 40px;
+}
+.facilities__swiper__slide {
+  text-align: left;
+  padding: 0 35px;
+  position: relative;
+}
+.facilities__swiper__slide__icon {
+  margin-top: 71px;
+  margin-bottom: 32px;
+}
+.facilities__swiper__slide__number {
+  position: absolute;
+  top: 0;
+  right: 35px;
+  font-weight: 700;
+  font-size: 120px;
+  color: rgba(34, 34, 34, 0.04);
+}
+.facilities__swiper__slide__title {
+  font-family: "Old Standard TT";
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: -0.9px;
+  color: #222222;
+  margin-bottom: 18px;
+}
+.facilities__swiper__slide__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+  margin-bottom: 40px;
+}
+.facilities__bottom-img {
+  width: 100px;
+  margin-left: calc(100% - 80px);
+}
+
 * {
   margin: 0;
   padding: 0;

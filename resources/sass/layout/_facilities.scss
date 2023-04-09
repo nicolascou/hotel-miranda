@@ -1,0 +1,67 @@
+@import "../globals";
+
+.facilities {
+  text-align: center;
+  padding-top: 60px;
+  
+  &__intro {
+    color: #777777;
+    letter-spacing: 2.8px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    color: #111;
+    font-size: 46px;
+    font-weight: 400;
+    margin-bottom: 14px;
+  }
+
+  &__swiper {
+    margin-bottom: 40px;
+
+    &__slide {
+      text-align: left;
+      padding: 0 35px;
+      position: relative;
+
+      &__icon {
+        margin-top: 71px;
+        margin-bottom: 32px;
+      }
+
+      &__number {
+        position: absolute;
+        top: 0;
+        right: 35px;
+        font-weight: 700;
+        font-size: 120px;
+        color: rgba(34, 34, 34, 0.04);
+      }
+
+      &__title {
+        font-family: 'Old Standard TT';
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: -0.9px;
+        color: #222222;
+        margin-bottom: 18px;
+      }
+
+      &__text {
+        font-size: 14px;
+        line-height: 24px;
+        color: #777777;
+        margin-bottom: 40px;
+      }
+    }
+
+  }
+
+  &__bottom-img {
+    width: 100px;
+    margin-left: calc(100% - 80px);
+  }
+}
