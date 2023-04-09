@@ -5,10 +5,15 @@
 @import "layout/calendar";
 @import "layout/aboutus";
 @import "layout/rooms";
+@import "layout/intro-video";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Archivo', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Old Standard TT', sans-serif;
 }
