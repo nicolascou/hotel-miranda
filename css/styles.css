@@ -1318,6 +1318,7 @@
 
 .facilities-black {
   background-color: #222222;
+  margin-bottom: 60px;
 }
 .facilities-black__text {
   color: white;
@@ -1330,6 +1331,92 @@
 }
 .facilities-black__swiper {
   background-color: #292929;
+}
+
+.d-none {
+  display: none;
+}
+
+.btn-icon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: 2.8px;
+  height: 50px;
+}
+.btn--yellow {
+  background-color: #BEAD8E;
+}
+.btn--transparent {
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  background-color: transparent;
+}
+
+.section-intro {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: 46px;
+}
+
+.counter {
+  padding: 0 20px;
+}
+.counter__intro {
+  color: #777777;
+  letter-spacing: 2.8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.counter__title {
+  font-weight: 400;
+  font-size: 56px;
+  letter-spacing: -1.2px;
+  margin-top: 24px;
+  margin-bottom: 36px;
+  color: #222222;
+}
+.counter__flex {
+  display: flex;
+  flex-direction: column;
+}
+.counter__flex__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.counter__flex__box__content {
+  flex-basis: 50%;
+}
+.counter__flex__box__content__number {
+  color: #222;
+  font-size: 60px;
+  font-family: "Old Standard TT";
+}
+.counter__flex__box__content__text {
+  color: #777;
+  font-size: 15px;
+  margin-top: -10px;
 }
 
 * {
