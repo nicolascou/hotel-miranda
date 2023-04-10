@@ -797,8 +797,9 @@
   margin-bottom: 32px;
 }
 .menu-section__bottom-slider__img {
-  object-fit: cover !important;
-  height: 300px !important;
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
   margin-bottom: 40px;
   background-color: black;
 }
@@ -853,10 +854,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 48px 0;
+  padding: 50px 0;
 }
 .summary__box {
   text-align: center;
+  margin-bottom: 60px;
+}
+.summary__box:last-child {
+  margin-bottom: 0;
 }
 .summary__box__icon {
   margin-bottom: 16px;
