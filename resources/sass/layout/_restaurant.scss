@@ -1,0 +1,47 @@
+@import "../globals";
+
+.restaurant-wrapper {
+  padding: $px-sm;
+  margin-bottom: 60px;
+}
+
+.restaurant {
+  padding: $px-sm;
+  padding-bottom: 40px;
+  box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+
+  &__img {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  &__intro {
+    color: #777777;
+    letter-spacing: 2.8px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 32px;
+    color: #222;
+  }
+
+  &__text {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #777;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  &__btn {
+    height: 60px;
+    width: 70%;
+    max-width: 400px;
+    font-size: 14px;
+    box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.36);
+  }
+}
