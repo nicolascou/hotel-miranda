@@ -31,3 +31,15 @@ new Swiper('.menu-section__bottom-slider', {
     delay: 2000
   },
 })
+
+new Swiper('.counter__bottom-slider', {
+  direction: 'horizontal',
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  loop: true,
+  autoplay: {
+    delay: 2000
+  },
+})

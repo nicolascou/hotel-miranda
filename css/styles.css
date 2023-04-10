@@ -1396,6 +1396,7 @@
 .counter__flex {
   display: flex;
   flex-direction: column;
+  margin-bottom: 24px;
 }
 .counter__flex__box {
   display: flex;
@@ -1416,6 +1417,16 @@
   color: #777;
   font-size: 15px;
   margin-top: -10px;
+}
+.counter__bottom-slider {
+  margin-bottom: 46px;
+}
+.counter__bottom-slider__img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 30px;
+  background-color: black;
 }
 
 * {
