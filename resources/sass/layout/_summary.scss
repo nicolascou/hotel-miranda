@@ -1,0 +1,35 @@
+@import "../globals";
+
+.summary {
+  background-color: $color-dark;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 0;
+
+  &__box {
+    text-align: center;
+
+    &__icon {
+      margin-bottom: 16px;
+    }
+
+    &__number {
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 60px;
+
+      &__plus {
+        font-size: 16px;
+        margin-left: 2px;
+      }
+    }
+
+    &__subtitle {
+      color: #999999;
+      font-weight: 700;
+    }
+  }
+}
