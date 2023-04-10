@@ -743,22 +743,64 @@
   margin-bottom: 24px;
 }
 .menu-section__title {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 .menu-section__menu {
   display: flex;
   flex-direction: column;
+  margin-bottom: 60px;
 }
 .menu-section__menu__option {
   display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 .menu-section__menu__option__img {
-  width: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
   margin-right: 30px;
 }
 .menu-section__menu__option__content__title {
   font-weight: 400;
   font-size: 24px;
+  margin-bottom: 8px;
+}
+.menu-section__menu__option__content__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.menu-section__menu__pagination {
+  text-align: right;
+}
+.menu-section__menu__pagination button {
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  position: relative;
+}
+.menu-section__menu__pagination button svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-section__menu__pagination__prev {
+  background: #F8F8F8;
+  margin-right: 10px;
+}
+.menu-section__menu__pagination__next {
+  background-color: #BEAD8E;
+}
+.menu-section__bottom-slider {
+  margin-bottom: 32px;
+}
+.menu-section__bottom-slider__img {
+  object-fit: cover !important;
+  height: 300px !important;
+  margin-bottom: 40px;
+  background-color: black;
 }
 
 * {
@@ -766,6 +808,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Archivo", sans-serif;
+}
+
+body {
+  min-width: 320px;
 }
 
 h1, h2, h3, h4 {

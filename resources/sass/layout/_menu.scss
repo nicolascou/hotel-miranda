@@ -9,18 +9,23 @@
   }
 
   &__title {
-    margin-bottom: 24px;
+    margin-bottom: 32px;
   }
 
   &__menu {
     display: flex;
     flex-direction: column;
+    margin-bottom: 60px;
 
     &__option {
       display: flex;
+      align-items: center;
+      margin-bottom: 20px;
 
       &__img {
-        width: 50%;
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
         margin-right: 30px;
       }
 
@@ -29,8 +34,52 @@
         &__title {
           font-weight: 400;
           font-size: 24px;
+          margin-bottom: 8px;
+        }
+
+        &__text {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
         }
       }
+    }
+
+    &__pagination {
+      text-align: right;
+      
+      button {
+        border: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        position: relative;
+        svg {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      &__prev {
+        background: #F8F8F8;
+        margin-right: 10px;
+      }
+
+      &__next {
+        background-color: $color-secondary;
+      }
+    }
+  }
+
+  &__bottom-slider {
+    margin-bottom: 32px;
+
+    &__img {
+      object-fit: cover !important;
+      height: 300px !important;
+      margin-bottom: 40px;
+      background-color: black;
     }
   }
 }

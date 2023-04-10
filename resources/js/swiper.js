@@ -19,3 +19,15 @@ new Swiper('.facilities__swiper', {
     clickable: true
   }
 });
+
+new Swiper('.menu-section__bottom-slider', {
+  direction: 'horizontal',
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  loop: true,
+  autoplay: {
+    delay: 5000
+  }
+})
