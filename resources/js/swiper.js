@@ -28,6 +28,6 @@ new Swiper('.menu-section__bottom-slider', {
   },
   loop: true,
   autoplay: {
-    delay: 5000
-  }
+    delay: 2000
+  },
 })
