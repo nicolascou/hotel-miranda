@@ -1001,6 +1001,9 @@
 .footer__icon-bar__icon:hover svg {
   fill: white;
 }
+.footer__services {
+  margin-bottom: 42px;
+}
 .footer__services__title {
   font-weight: 400;
   font-size: 24px;
@@ -1019,6 +1022,34 @@
   min-width: 50%;
   margin-bottom: 24px;
 }
+.footer__services__options__box:last-child {
+  margin-bottom: 0;
+}
+.footer__contact {
+  margin-bottom: 32px;
+}
+.footer__contact__title {
+  font-weight: 400;
+  font-size: 24px;
+  color: #222222;
+  margin-bottom: 32px;
+}
+.footer__contact__box {
+  display: flex;
+  margin-bottom: 42px;
+}
+.footer__contact__box__content {
+  margin-left: 30px;
+}
+.footer__contact__box__content__title {
+  color: #222;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.footer__contact__box__content__number {
+  color: #777;
+}
 
 * {
   margin: 0;
@@ -1031,7 +1062,7 @@ body {
   min-width: 320px;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Old Standard TT", sans-serif;
 }
 

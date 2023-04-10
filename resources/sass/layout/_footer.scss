@@ -86,6 +86,7 @@
   }
 
   &__services {
+    margin-bottom: 42px;
 
     &__title {
       font-weight: 400;
@@ -106,6 +107,40 @@
       &__box {
         min-width: 50%;
         margin-bottom: 24px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__contact {
+    margin-bottom: 32px;
+
+    &__title {
+      font-weight: 400;
+      font-size: 24px;
+      color: $color-dark;
+      margin-bottom: 32px;
+    }
+
+    &__box {
+      display: flex;
+      margin-bottom: 42px;
+
+      &__content {
+        margin-left: 30px;
+
+        &__title {
+          color: #222;
+          font-size: 20px;
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        &__number {
+          color: #777;
+        }
       }
     }
   }
