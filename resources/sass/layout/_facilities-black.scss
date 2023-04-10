@@ -1,0 +1,21 @@
+@import "../globals";
+
+.facilities-black {
+  background-color: $color-dark;
+  
+  &__text {
+    color: white;
+  }
+
+  &__number {
+    color: #222;
+  }
+
+  &__swiper-wrapper {
+    padding: $px-sm;
+  }
+
+  &__swiper {
+    background-color: #292929;
+  }
+}
