@@ -11,16 +11,21 @@
 @import "layout/summary";
 @import "layout/footer";
 
+// About Us
 @import "layout/about-intro";
 @import "layout/restaurant";
 @import "layout/facilities-black";
 @import "layout/counter";
 
+// Rooms
 @import "layout/rooms-flex";
+
+// Room Details
 @import "layout/offer";
 @import "layout/amenities";
 @import "layout/profile";
 @import "layout/cancellation";
+@import "layout/related-rooms";
 
 * {
   margin: 0;

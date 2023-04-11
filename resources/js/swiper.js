@@ -43,3 +43,12 @@ new Swiper('.counter__bottom-slider', {
     delay: 2000
   },
 })
+
+new Swiper('.related-rooms__swiper', {
+  direction: 'horizontal',
+  loop: true,
+  navigation: {
+    prevEl: '.related-rooms__prev-btn',
+    nextEl: '.related-rooms__next-btn',
+  },
+})
