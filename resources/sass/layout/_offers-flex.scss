@@ -1,0 +1,57 @@
+@import '../globals';
+
+.offers-flex {
+  padding: 48px $px-sm;
+
+  &__text {
+    margin-bottom: 20px;
+  }
+
+  &__box {
+    box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+    margin-bottom: 32px;
+
+    &__card {
+      padding: 0 $px-sm;
+      padding-bottom: 32px;
+    }
+
+    &__price {
+      position: absolute;
+      font-weight: 700;
+      right: 20px;
+      text-shadow: 1px 1px 0px #000;
+
+      &--old {
+        bottom: 60px;
+        font-size: 24px;
+        color: $color-secondary;
+      }
+
+      &--new {
+        bottom: 10px;
+        font-size: 36px;
+        color: #DE5777;
+      }
+
+      &__small {
+        text-decoration: none;
+        font-size: 16px;
+      }
+    }
+
+    &__img-wrapper {
+      position: relative;
+      margin-bottom: 16px;
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+    &__btn {
+      width: 65%;
+      max-width: 400px;
+    }
+  }
+}

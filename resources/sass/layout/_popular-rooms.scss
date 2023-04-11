@@ -1,0 +1,70 @@
+@import '../globals';
+
+.popular-rooms {
+  padding: 48px $px-sm;
+  text-align: center;
+  background-color: $color-dark;
+  margin-bottom: 60px;
+  
+  &__intro {
+    color: $color-secondary;
+    letter-spacing: 2.8px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  
+  &__title {
+    color: white;
+    font-size: 46px;
+    margin-top: 30px;
+    font-weight: 400;
+  }
+
+  &__card {
+    background-color: white;
+    margin: 0;
+    margin-top: -3px;
+    padding: 25px;
+    width: 100%;
+
+    &__title {
+      font-family: 'Old Standard TT';
+      font-weight: 400;
+      font-size: 24px;
+      letter-spacing: -0.72px;
+      color: #222222;
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    &__text {
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      color: #777;
+      margin: 0 auto;
+      max-width: 80%;
+      margin-bottom: 18px;
+    }
+
+    &__price {
+      color: $color-secondary;
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    &__booking {
+      font-weight: 700;
+      font-size: 16px;
+      color: #BDBDBD;
+      text-decoration: none;
+    }
+
+    &__bottom-flex {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
