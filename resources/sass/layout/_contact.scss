@@ -31,7 +31,7 @@
         }
 
         &__address {
-          color: #777;
+          color: $color-text;
           font-size: 15px;
           margin-bottom: 5px;
         }
@@ -52,6 +52,7 @@
 
   &__img {
     width: 100%;
+    box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.25);
   }
 
   &__form {

@@ -6,7 +6,7 @@
   overflow-x: hidden;
   
   &__intro {
-    color: #777777;
+    color: $color-text;
     letter-spacing: 2.8px;
     font-size: 14px;
     font-weight: 700;
@@ -54,7 +54,7 @@
       &__text {
         font-size: 14px;
         line-height: 24px;
-        color: #777777;
+        color: $color-text;
         margin-bottom: 46px;
       }
     }

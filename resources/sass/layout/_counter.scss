@@ -4,7 +4,7 @@
   padding: 0 $px-sm;
   
   &__intro {
-    color: #777777;
+    color: $color-text;
     letter-spacing: 2.8px;
     font-size: 14px;
     font-weight: 700;
@@ -40,7 +40,7 @@
           font-family: 'Old Standard TT';
         }
         &__text {
-          color: #777;
+          color: $color-text;
           font-size: 15px;
           margin-top: -10px;
         }
