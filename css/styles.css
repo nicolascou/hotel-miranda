@@ -257,13 +257,22 @@
 }
 .calendar__form__input {
   margin-bottom: 25px;
-  border: none;
-  outline: none;
+  display: flex;
+  align-items: center;
   border-bottom: 2px solid #BEAD8E;
   background-color: transparent;
   width: 100%;
   padding: 10px;
+}
+.calendar__form__input input {
+  margin-left: 10px;
+  background: none;
+  outline: none;
+  border: none;
   color: gray;
+}
+.calendar__form__input input::-webkit-calendar-picker-indicator {
+  display: none;
 }
 .calendar__form__btn {
   margin-top: 20px;
