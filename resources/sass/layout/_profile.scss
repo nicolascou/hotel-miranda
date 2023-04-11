@@ -1,0 +1,44 @@
+.profile {
+  padding: 30px $px-sm;
+  text-align: center;
+  
+  &__img {
+    width: 50%;
+    position: relative;
+    display: inline-block;
+    
+    img {
+      border-radius: 50%;
+    }
+
+    svg {
+      position: absolute;
+      left: 75%;
+      top: 5%;
+    }
+  }
+
+  &__name {
+    margin-top: 24px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #BDAC8D;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    color: #777;
+    max-width: 75%;
+    line-height: 24px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}

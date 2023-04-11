@@ -1915,6 +1915,45 @@
   margin-right: 5px;
 }
 
+.profile {
+  padding: 30px 20px;
+  text-align: center;
+}
+.profile__img {
+  width: 50%;
+  position: relative;
+  display: inline-block;
+}
+.profile__img img {
+  border-radius: 50%;
+}
+.profile__img svg {
+  position: absolute;
+  left: 75%;
+  top: 5%;
+}
+.profile__name {
+  margin-top: 24px;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.profile__subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #BDAC8D;
+  margin-bottom: 24px;
+}
+.profile__text {
+  color: #777;
+  max-width: 75%;
+  line-height: 24px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
 * {
   margin: 0;
   padding: 0;
