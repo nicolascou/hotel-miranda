@@ -1,0 +1,37 @@
+@import "../globals";
+
+.amenities {
+  padding: $px-sm;
+
+  &__title {
+    font-size: 30px;
+    font-weight: 400;
+    border-bottom: 1px solid #f1f1ff;
+    padding-bottom: 10px;
+  }
+
+  &__flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 35px 0;
+
+    &__box {
+      display: flex;
+      width: 50%;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 16px;
+
+      svg {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  &__text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #777;
+  }
+}

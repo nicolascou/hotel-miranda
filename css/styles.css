@@ -1830,6 +1830,90 @@
   height: 60px;
 }
 
+.d-none {
+  display: none;
+}
+
+.btn-icon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: 2.8px;
+  height: 50px;
+}
+.btn--yellow {
+  background-color: #BEAD8E;
+}
+.btn--transparent {
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  background-color: transparent;
+}
+
+.section-intro {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: 46px;
+}
+
+.default-txt {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777;
+}
+
+.amenities {
+  padding: 20px;
+}
+.amenities__title {
+  font-size: 30px;
+  font-weight: 400;
+  border-bottom: 1px solid #f1f1ff;
+  padding-bottom: 10px;
+}
+.amenities__flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 35px 0;
+}
+.amenities__flex__box {
+  display: flex;
+  width: 50%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.amenities__flex__box svg {
+  margin-right: 8px;
+}
+.amenities__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #777;
+}
+
 * {
   margin: 0;
   padding: 0;
