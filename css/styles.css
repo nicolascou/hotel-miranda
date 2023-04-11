@@ -1954,6 +1954,20 @@
   margin-bottom: 30px;
 }
 
+.cancellation {
+  padding: 20px;
+  margin-bottom: 100px;
+}
+.cancellation__title {
+  font-size: 30px;
+  font-weight: 400;
+  border-bottom: 1px solid #f1f1ff;
+  padding-bottom: 10px;
+}
+.cancellation__text {
+  margin-top: 32px;
+}
+
 * {
   margin: 0;
   padding: 0;

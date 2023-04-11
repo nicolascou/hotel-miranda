@@ -1,0 +1,15 @@
+.cancellation {
+  padding: $px-sm;
+  margin-bottom: 100px;
+
+  &__title {
+    font-size: 30px;
+    font-weight: 400;
+    border-bottom: 1px solid #f1f1ff;
+    padding-bottom: 10px;
+  }
+
+  &__text {
+    margin-top: 32px;
+  }
+}
