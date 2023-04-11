@@ -1124,7 +1124,6 @@
   fill: #777;
 }
 .footer__icon-bar__icon:hover {
-  transform: scale(1.1);
   background-color: #BEAD8E;
 }
 .footer__icon-bar__icon:hover svg {
@@ -2053,6 +2052,138 @@
   right: 10px;
   background-color: #BEAD8E;
   color: white;
+}
+
+.d-none {
+  display: none;
+}
+
+.btn-icon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: 2.8px;
+  height: 50px;
+}
+.btn--yellow {
+  background-color: #BEAD8E;
+}
+.btn--transparent {
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  background-color: transparent;
+}
+
+.section-intro {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: 46px;
+}
+
+.default-txt {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777;
+}
+
+.contact {
+  padding: 25px 20px;
+}
+.contact__flex {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.contact__flex__box {
+  padding: 52px 12px;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  min-height: 220px;
+  margin-bottom: 32px;
+}
+.contact__flex__box__icon {
+  margin-right: 25px;
+}
+.contact__flex__box__content {
+  max-width: 60%;
+}
+.contact__flex__box__content__title {
+  font-size: 22px;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 16px;
+}
+.contact__flex__box__content__address {
+  color: #777;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.contact__flex__box__number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  font-family: "Roboto", sans-serif;
+  font-size: 200px;
+  font-weight: 700;
+  color: #f8f8f8;
+}
+.contact__img {
+  width: 100%;
+}
+.contact__form {
+  margin: 60px 0;
+}
+.contact__form__input {
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: flex-start;
+  padding: 25px 20px;
+  margin-bottom: 16px;
+}
+.contact__form__input input {
+  background: none;
+  outline: none;
+  border: none;
+  margin-left: 16px;
+  font-size: 16px;
+}
+.contact__form__input textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  background: none;
+  outline: none;
+  border: none;
+  margin-left: 16px;
+  font-size: 16px;
+}
+.contact__form__btn {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 32px;
 }
 
 * {

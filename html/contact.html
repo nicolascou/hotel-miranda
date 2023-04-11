@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Miranda - Rooms</title>
+  <link rel='stylesheet' href='../css/styles.css'>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&display=swap" rel="stylesheet">
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+</head>
+<body>
+  <header class="header">
+    <div class="header__mobile-flex">
+      <button class="header__hamburger btn-icon" id="hamburgerBtn">
+        <svg width="100%" height="100%" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"/></svg>
+      </button>
+      <button class="header__hamburger d-none btn-icon" id="closeMenu">
+        <svg width="100%" height="100%" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg>
+      </button>
+      <div class="header__main">
+        <div style="display: flex; align-items: center; justify-content: flex-start;">
+          <div class="header__main__h">H</div>
+          <div class="header__main__title">
+            <p class="header__main__title__hotel">HOTEL</p>
+            <p class="header__main__title__miranda">MIRANDA</p>
+          </div>
+        </div>
+      </div>
+      <div class="header__btns">
+        <button class="header__btns__icon btn-icon">
+          <svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.2479 9.52286C15.1564 8.51071 15.7143 7.17786 15.7143 5.71429C15.7143 2.56357 13.1507 0 10 0C6.84929 0 4.28571 2.56357 4.28571 5.71429C4.28571 8.865 6.84929 11.4286 10 11.4286C11.1107 11.4286 12.145 11.105 13.0236 10.5543C16.1307 11.725 18.27 14.5686 18.5421 17.8571H1.45857C1.64357 15.6436 2.68214 13.5793 4.37143 12.1064C4.66929 11.8471 4.7 11.3964 4.44071 11.0986C4.18214 10.8014 3.73071 10.77 3.43286 11.0293C1.25071 12.9307 0 15.6793 0 18.5714C0 18.9664 0.32 19.2857 0.714286 19.2857H19.2857C19.6807 19.2857 20 18.9664 20 18.5714C20 14.6529 17.7286 11.1536 14.2479 9.52286ZM5.71429 5.71429C5.71429 3.35071 7.63643 1.42857 10 1.42857C12.3636 1.42857 14.2857 3.35071 14.2857 5.71429C14.2857 8.07786 12.3636 10 10 10C7.63643 10 5.71429 8.07786 5.71429 5.71429Z" fill="#111111"/>
+          </svg>            
+        </button>
+        <button class="header__btns__icon btn-icon">
+          <svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.8084 17.8179L14.3984 13.4078H14.3509C15.7102 11.8051 16.3971 9.73882 16.2679 7.64127C16.1388 5.54372 15.2035 3.57735 13.6579 2.15351C12.1122 0.729662 10.0759 -0.0413648 7.97477 0.00171254C5.87368 0.0447899 3.87064 0.898635 2.38464 2.38464C0.898635 3.87064 0.0447899 5.87368 0.00171254 7.97477C-0.0413648 10.0758 0.729662 12.1122 2.15351 13.6579C3.57735 15.2035 5.54372 16.1388 7.64127 16.2679C9.73882 16.3971 11.8051 15.7102 13.4078 14.3509C13.4078 14.3509 13.4078 14.3848 13.4078 14.3984L17.8179 18.8084C17.8809 18.872 17.956 18.9225 18.0386 18.9569C18.1213 18.9914 18.21 19.0091 18.2996 19.0091C18.3891 19.0091 18.4778 18.9914 18.5605 18.9569C18.6432 18.9225 18.7182 18.872 18.7813 18.8084C18.8508 18.7468 18.907 18.6716 18.9463 18.5874C18.9856 18.5033 19.0072 18.4119 19.0097 18.319C19.0123 18.2262 18.9957 18.1338 18.9611 18.0475C18.9265 17.9613 18.8745 17.8832 18.8084 17.8179ZM8.14964 14.9072C6.80775 14.9072 5.496 14.5093 4.38026 13.7638C3.26452 13.0183 2.3949 11.9586 1.88139 10.7189C1.36787 9.47915 1.23351 8.11498 1.4953 6.79887C1.75709 5.48277 2.40327 4.27385 3.35213 3.32499C4.30099 2.37613 5.50991 1.72995 6.82601 1.46816C8.14212 1.20637 9.50629 1.34073 10.746 1.85425C11.9858 2.36777 13.0454 3.23738 13.7909 4.35312C14.5364 5.46886 14.9344 6.78061 14.9344 8.1225C14.9344 9.01348 14.7589 9.89574 14.4179 10.7189C14.0769 11.5421 13.5772 12.29 12.9472 12.92C12.3171 13.55 11.5692 14.0498 10.746 14.3908C9.92288 14.7317 9.04062 14.9072 8.14964 14.9072Z" fill="#111111"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <nav class="header__navbar d-none" id="navbar">
+      <ul>
+        <li><a class="header__navbar__item" href="about.html">About us</a></li>
+        <li><a class="header__navbar__item" href="rooms.html">Rooms</a></li>
+        <li><a class="header__navbar__item" href="offers.html">Offers</a></li>
+        <li><a class="header__navbar__item" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <p class="hero__subtitle hero__subtitle--subdomain">THE ULTIMATE LUXURY</p>
+    <h2 class="hero__title">New Details</h2>
+    <div class="hero__page">
+      <a class="hero__page__link" href="../index.html">Home</a> |
+      <a class="hero__page__link hero__page__link-active" href="rooms.html">Contact</a>
+    </div>
+  </div>
+
+  <section class="contact">
+    <div class="contact__flex">
+      <div class="contact__flex__box">
+        <svg class="contact__flex__box__icon" width="40" height="38" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <rect width="40" height="38" fill="url(#pattern0)"/>
+          <defs>
+          <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image0_57_7462" transform="scale(0.025 0.0263158)"/>
+          </pattern>
+          <image id="image0_57_7462" width="40" height="38" xlink:href="data:image/png;base64,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"/>
+          </defs>
+        </svg>
+        <div class="contact__flex__box__content">
+          <h4 class="contact__flex__box__content__title">Hotel Address</h4>
+          <p class="contact__flex__box__content__address">19/A, Cirikon City hall Tower New York, NYC</p>
+        </div>
+        <p class="contact__flex__box__number">01</p>
+      </div>
+      <div class="contact__flex__box">
+        <svg class="contact__flex__box__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_57_7465)">
+          <path d="M38.9504 30.8579L30.8542 25.4587C29.8268 24.779 28.4496 25.0027 27.69 25.9726L25.3317 29.0048C25.0286 29.4044 24.4777 29.5204 24.0392 29.2768L23.5906 29.0295C22.1035 28.2189 20.2531 27.2098 16.525 23.4803C12.7969 19.7509 11.7857 17.8991 10.9751 16.4147L10.7292 15.9661C10.4823 15.5278 10.596 14.9745 10.9958 14.669L14.0259 12.3114C14.9955 11.5517 15.2194 10.1749 14.5406 9.14714L9.14136 1.051C8.4456 0.00443778 7.04971 -0.309734 5.97261 0.337748L2.58709 2.37143C1.52334 2.99681 0.742912 4.00962 0.409446 5.19765C-0.809671 9.63965 0.107458 17.3059 11.4005 28.6002C20.3838 37.5828 27.0715 39.9985 31.6682 39.9985C32.7261 40.003 33.7798 39.8654 34.8011 39.5893C35.9893 39.2562 37.0023 38.4757 37.6273 37.4116L39.663 34.0281C40.3114 32.9508 39.9974 31.554 38.9504 30.8579ZM38.5144 33.3442L36.4834 36.7297C36.0346 37.4977 35.3061 38.0624 34.4503 38.3055C30.3496 39.4313 23.1854 38.4988 12.3436 27.6571C1.50186 16.8153 0.569422 9.65168 1.69527 5.55033C1.93867 4.69358 2.50406 3.96408 3.27301 3.51462L6.65852 1.48359C7.12587 1.20238 7.73172 1.33869 8.03363 1.79284L10.9666 6.19617L13.4282 9.88828C13.723 10.3341 13.6262 10.9316 13.2056 11.2614L10.1747 13.6191C9.25235 14.3243 8.98896 15.6005 9.55684 16.6133L9.79751 17.0506C10.6494 18.613 11.7086 20.5567 15.5753 24.4228C19.4421 28.2889 21.3852 29.3481 22.9469 30.2L23.3848 30.4412C24.3975 31.0091 25.6738 30.7457 26.379 29.8234L28.7367 26.7925C29.0666 26.3722 29.6639 26.2754 30.1098 26.5699L38.2053 31.9691C38.6597 32.2707 38.796 32.8769 38.5144 33.3442Z" fill="#BEAD8E"/>
+          <path d="M22.6656 6.67C28.921 6.67695 33.9902 11.7463 33.9972 18.0017C33.9972 18.3698 34.2956 18.6682 34.6638 18.6682C35.0319 18.6682 35.3303 18.3698 35.3303 18.0017C35.3226 11.0103 29.6569 5.34457 22.6656 5.33691C22.2974 5.33691 21.999 5.63531 21.999 6.00346C21.999 6.3716 22.2974 6.67 22.6656 6.67Z" fill="#BEAD8E"/>
+          <path d="M22.6656 10.6695C26.7131 10.6743 29.9931 13.9543 29.9978 18.0018C29.9978 18.3699 30.2963 18.6683 30.6644 18.6683C31.0325 18.6683 31.3309 18.3699 31.3309 18.0018C31.3254 13.2183 27.449 9.34189 22.6656 9.33643C22.2974 9.33643 21.999 9.63482 21.999 10.003C21.999 10.3711 22.2974 10.6695 22.6656 10.6695Z" fill="#BEAD8E"/>
+          <path d="M22.6656 14.669C24.5053 14.6712 25.9962 16.1621 25.9984 18.0019C25.9984 18.37 26.2969 18.6684 26.665 18.6684C27.033 18.6684 27.3315 18.37 27.3315 18.0019C27.3285 15.4262 25.2413 13.3388 22.6656 13.3359C22.2974 13.3359 21.999 13.6343 21.999 14.0025C21.999 14.3706 22.2974 14.669 22.6656 14.669Z" fill="#BEAD8E"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_57_7465">
+          <rect width="40" height="40" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>
+        <div class="contact__flex__box__content">
+          <h4 class="contact__flex__box__content__title">Phone Number</h4>
+          <p class="contact__flex__box__content__address">+ 97656 8675 7864 7</p>
+          <p class="contact__flex__box__content__address">+ 876 766 8675 765 6</p>
+        </div>
+        <p class="contact__flex__box__number">02</p>
+      </div>
+      <div class="contact__flex__box">
+        <svg class="contact__flex__box__icon" width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <rect y="0.5" width="40" height="40" fill="url(#patternUbi)"/>
+          <defs>
+          <pattern id="patternUbi" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image0_57_7480" transform="scale(0.025)"/>
+          </pattern>
+          <image id="image0_57_7480" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAKKADAAQAAAABAAAAKAAAAABZLkSWAAAH8ElEQVRYCc1Ye2wURRifmd2ePSsgEURj4oNYgsaAGjWRh3BttYASzF0tJiCCb0WgvRZEQFrBRLH0rjxUlBgQ8cGlvQJRVLz2cpSgCagBHwEENAoKKChFKNfuzvibk23mtvfYVv9wk7v55nvNt9/s95ih5F88n4Ze6qNprrsJFYWE0OFE0EsJEQwqT2C+E2MzNTs2e0rnHO3pMrQngp+sq8nT89hsSugTUh5KduB/NyF8rxDEoIxcKwgZCoNvB7k3FSSkUbroDl/5r91dr9sGRhrqbmWUv00EyaFELG5rywmPmzyzNdXCoVC1q5/WawwhbCE8exXe5JECr39TKt50uG4Z2FxfV0wo3yyIWGec4WXFU2afSadYxQshaDQcfBa4RXip6R5fxesqPRPs2MBoY/BGwcUubOtij6/8+UxK09Fg5CQYux7b7y30+RvT8al4RwZuWb+8d67b/BLbtKPA55+iKrBgGTA6c+WbjOa4DO3AHaUzf7No6tjcEJwDPc9rQhsyqmTW9yotFSwjLuvjzu14Dkr7dJwxn7Qzx+qX5TeHAxsQzfsEJc1MiK2GZnwbbQhujYSDMkiSngJf+cvY5q9NaqxIIqSZZDWw5YMX+wpKn4Z8lf2bi4SX3mkycxcCph+lZKppajcIkwymlHsF4cdhbCzaEHjYvrbJaQWivjhSXzfETrPPdTvCPu9od40H7hQ1L1in0iINwYEwYDOMry30lS9QaYCP4Lc9Wh/4FF5dG2moPVTkq4haPEX3+VuaGwKfM2pOAm6PhU81ZvUgvHMX0kPMUzr9L1UBUs0L8MKuQm8X4zrZPCX+tzB5gxFaFwqFtE6CBAT5CME9NgmXYpLdwH8S7jeqrAwIJOGxSDcBFZ8SNpnkyR+gHxmk0pHQP8dn0Te6pjpXxdvhjAZWV1eDztyU8P2qoKbnXI05Z6bxmYpPBdP+fx4E/pjBxbUqnVFyEnM9ntf7QhVvhzMaWFVVhZQlBCfMpQoKweR2mXGit6v4VHAsRjjwHNuctMVcI3JtkXdhHGukfzIaSCnFTpDTSAuDVRUGNQ5j7tY1MVTFp4KH3eS+DPj+nJKfVDoCDI0FMU6zvLMq3g5nNFAyI5PvxLd2vSpY7J19HPOYRmi5ik8F60bOdOB/i7u1b1U6F2wEXvzouHEz4yreDmc1EAIxlLdh2zct6ZUkTMV8ePfupnAg0dEk0c5PErWbkHngq7QbAuNGccq2ppJTcbo6SQW3m+Rjl0bWtBs5Mh++a/EUeCt2I5c9gFZqbXO49lbOtWVtF7gPaFrcdJ3ruIoJ+iA+vdnYg4XIk0l193xdv41xMcPSl27M6sExpf6TMmdBwWN2JajL76KBGI0edRDy4ra89jOHctuMgzDuC/BOgOcmorQttssRLh7Gt/M98uSuLjQbwlGz0BQOFiBcmqjg13lKKvfadCSmkXDtIE0wlC4Zn2zf6HvLdssgs/PKTwW78YsgdB48m7UeOzJQLoLt3I5hP7z2kH3R7szRWJRjR+a49I5BIyY8czqbbNYtthQg3ywBPCkaelmmjR490Wi1jgpUifS33IlxchHHBrZ80/ohFO9HjrY3Bo6N5X/0miZzM2XsNadCjrdYKoyGA2PgyQ85oflFvvJDThdJyIZeuUho8R/Q/SxBg7HUqaxjD0qFHq//Y7xRDAGzzOkCnXx6fD7gNnbq1MpOnAOgWwZKfUwTD6ILKWhqDGZtlaz1ZYTD87Mop1M806rPWXgnY9otRmqpRJK4BWUuKVWgqqBBED4o/z3XJNcNK/W3ZVtItv/Qcyea1/WI4KTiAH0yF/2IUlhlrzZSb0oPNjUGbsM21kgGeCsujbJ+EofnLfxc5xh5KTHL8IdD0mMwbjhYXoU3TEtPYoRu4KFfVLrPGvenUpP0NhYD42Qu3moLqkBKIckXDS99TxDWgnZ+o9rOWzrkGAvVXGMSsVJQMb3QW7FapakwXuIIeObiSLrOnty7eFAqhXH34ODzoqrEDnu8ldtRrmrQ521Abb3YTpeHdVPTQti/SCbjpJwwxSsYBjY11hbZ9XQx0NC1WWD6LmGAnds2p31b50H9MSyw1kaCh4MvAJffzsypdpp9Xljql4esekbYM3ZakoHyUogKOgUfs6M04vFUo5PXJsGTExAIj1jKUc5GAZ4HXVPP944WqcsoKxOOpouRH99EAI2U52yVKclAVx6bDI8YZ3PyNqhMmeCikrI92MapCITVTQ3BmyPhlZeAf7Pcfk9J+cZMsgmamxn4pPw4GAyATItJzTJVptNAeUBChagA02vjxz+esQ1XFUg4cbwUZDmicQsj7dvgiR3b9rTOtfOlmnvGV/6OzmYFko38tGR384C8LLB4Ow0cObRPMdLAlbqgqyxid0ZcKJUhY+7ECcs816ZPxAvLw5KjhxFNVpchnPCzcNDPHfHcRy3BTgMp53NBfL8nl4xSmUwPaCgmnOCtt6S7L7QWtY8e38zDuKXdiG/2KXgfES1myLtFyZfIg2jZ5W3ocEo0ecDp8XPea6g03X80TmpMSj+BgQvgqEX99d5eaHn/Hw8KgrMDrje8s5JuELq/TM8lRpVUfMVNPhqfyncw8h2OplZqo02hwBU4Uu/D2eKuwvsqdvR8if9OMrKpbgAz+EEUizE6Y6IMUWRQqvWS12n/3TI910RNXOKhgUAxWoCgJZdjcgx3z6uYwI3J/+JBViWkHYFH/wYf7w7OqNyDYQAAAABJRU5ErkJggg=="/>
+          </defs>
+        </svg>
+        <div class="contact__flex__box__content">
+          <h4 class="contact__flex__box__content__title">Email</h4>
+          <p class="contact__flex__box__content__address">info@webmail.com</p>
+          <p class="contact__flex__box__content__address">jobs.webmail@mail.com</p>
+        </div>
+        <p class="contact__flex__box__number">03</p>
+      </div>
+    </div>
+    <img class="contact__img" src="../resources/img/contact.jpg" alt="">
+    <form class="contact__form">
+      <div class="contact__form__input">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_57_7484)">
+          <path d="M10.9735 8.166C11.6095 7.4575 12 6.5245 12 5.5C12 3.2945 10.2055 1.5 8 1.5C5.7945 1.5 4 3.2945 4 5.5C4 7.7055 5.7945 9.5 8 9.5C8.7775 9.5 9.5015 9.2735 10.1165 8.888C12.2915 9.7075 13.789 11.698 13.9795 14H2.021C2.1505 12.4505 2.8775 11.0055 4.06 9.9745C4.2685 9.793 4.29 9.4775 4.1085 9.269C3.9275 9.061 3.6115 9.039 3.403 9.2205C1.8755 10.5515 1 12.4755 1 14.5C1 14.7765 1.224 15 1.5 15H14.5C14.7765 15 15 14.7765 15 14.5C15 11.757 13.41 9.3075 10.9735 8.166ZM5 5.5C5 3.8455 6.3455 2.5 8 2.5C9.6545 2.5 11 3.8455 11 5.5C11 7.1545 9.6545 8.5 8 8.5C6.3455 8.5 5 7.1545 5 5.5Z" fill="#BEAD8E"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_57_7484">
+          <rect width="16" height="16" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>
+        <input type="text" placeholder="Your full name">
+      </div>
+      <div class="contact__form__input">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_57_7518)">
+          <path d="M15.0751 11.8376C14.8269 11.4325 14.4417 10.9608 13.9891 10.5089C13.6616 10.1813 12.5372 9.11343 11.8143 9.11343C11.5823 9.11343 11.4351 9.21259 11.3527 9.29492L10.39 10.2571C10.3738 10.2733 10.3221 10.2919 10.2289 10.2919C9.69467 10.2919 8.56186 9.70057 7.43025 8.56956C5.92123 7.05995 5.55825 5.79432 5.74275 5.60983L6.70429 4.64769C6.78722 4.56475 6.88638 4.41752 6.88638 4.18615C6.88698 3.46259 5.81847 2.33819 5.49095 2.01067C5.16402 1.68314 4.04022 0.615234 3.31607 0.615234C3.0847 0.615234 2.93746 0.713792 2.85453 0.796725L0.929648 2.7216C0.361138 3.28951 0.56847 4.40069 1.54623 6.02389C2.39479 7.43254 3.73794 9.08398 5.32688 10.6729C8.14539 13.4914 10.9994 15.3851 12.4284 15.3845C12.7842 15.3845 13.0697 15.2787 13.2782 15.0702L15.2031 13.1453C15.6196 12.7288 15.2097 12.0581 15.0751 11.8376ZM12.6256 14.4175C12.6039 14.4386 12.5414 14.4614 12.4284 14.4614C11.4555 14.4614 8.86474 12.9049 5.97953 10.0203C4.44167 8.48242 3.1484 6.89408 2.3371 5.54733C1.42304 4.0305 1.50897 3.44757 1.58229 3.37425L3.39419 1.56235C3.63037 1.6537 4.17784 2.00225 4.8383 2.66331C5.49876 3.32437 5.84792 3.87124 5.93926 4.10742L5.0901 4.95718C4.20489 5.8424 5.34431 7.78831 6.7776 9.22221C8.00717 10.4518 9.32989 11.215 10.2289 11.215C10.649 11.215 10.9032 11.0491 11.0426 10.9097L11.8924 10.0605C12.1286 10.1519 12.6754 10.5011 13.3365 11.1615C13.997 11.822 14.3461 12.3694 14.4375 12.6056L12.6256 14.4175Z" fill="#BEAD8E"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_57_7518">
+          <rect width="16" height="16" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>
+        <input type="tel" placeholder="Add phone number">
+      </div>
+      <div class="contact__form__input">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_57_7521)">
+          <path d="M14.5912 3.9788C14.5618 3.93931 14.5248 3.90601 14.4825 3.8808C14.4402 3.85559 14.3933 3.83898 14.3445 3.83189C14.2958 3.82481 14.2461 3.82741 14.1983 3.83953C14.1506 3.85166 14.1057 3.87307 14.0662 3.90255L8.01748 8.41755C7.99584 8.43378 7.96952 8.44255 7.94248 8.44255C7.91543 8.44255 7.88911 8.43378 7.86748 8.41755L1.93747 3.88255C1.89832 3.85268 1.85367 3.8308 1.80607 3.81818C1.75847 3.80557 1.70884 3.80245 1.66003 3.809C1.61123 3.81556 1.56419 3.83167 1.5216 3.85641C1.47902 3.88114 1.44172 3.91403 1.41185 3.95318C1.38197 3.99233 1.3601 4.03698 1.34748 4.08458C1.33486 4.13218 1.33174 4.18181 1.3383 4.23062C1.34486 4.27943 1.36097 4.32646 1.3857 4.36905C1.41044 4.41163 1.44332 4.44893 1.48247 4.4788L6.14497 8.04505L1.53372 11.52C1.494 11.5497 1.4605 11.5868 1.43514 11.6294C1.40977 11.672 1.39305 11.7191 1.38591 11.7682C1.37877 11.8172 1.38136 11.8672 1.39353 11.9152C1.4057 11.9633 1.42722 12.0084 1.45685 12.0482C1.48648 12.0879 1.52364 12.1214 1.56622 12.1468C1.60879 12.1721 1.65595 12.1889 1.70499 12.196C1.75403 12.2031 1.804 12.2005 1.85204 12.1884C1.90008 12.1762 1.94525 12.1547 1.98497 12.125L6.76373 8.51755L7.41123 9.01755C7.5622 9.13312 7.74672 9.19636 7.93684 9.19772C8.12697 9.19907 8.31237 9.13846 8.46498 9.02505L9.14498 8.51755L13.98 12.125C14.0195 12.1545 14.0644 12.1759 14.1121 12.188C14.1599 12.2001 14.2095 12.2027 14.2583 12.1957C14.307 12.1886 14.3539 12.172 14.3962 12.1468C14.4386 12.1216 14.4755 12.0883 14.505 12.0488C14.5344 12.0093 14.5558 11.9644 14.568 11.9167C14.5801 11.8689 14.5827 11.8193 14.5756 11.7705C14.5685 11.7218 14.5519 11.6749 14.5267 11.6325C14.5015 11.5902 14.4682 11.5533 14.4287 11.5238L9.77123 8.0438L14.515 4.50005C14.5937 4.44064 14.6458 4.35263 14.66 4.25507C14.6743 4.15752 14.6496 4.05826 14.5912 3.9788Z" fill="#BEAD8E"/>
+          <path d="M14.125 2.375H1.875C1.37772 2.375 0.900805 2.57254 0.549175 2.92417C0.197544 3.27581 0 3.75272 0 4.25L0 11.75C0 12.2473 0.197544 12.7242 0.549175 13.0758C0.900805 13.4275 1.37772 13.625 1.875 13.625H14.125C14.6223 13.625 15.0992 13.4275 15.4508 13.0758C15.8025 12.7242 16 12.2473 16 11.75V4.25C16 3.75272 15.8025 3.27581 15.4508 2.92417C15.0992 2.57254 14.6223 2.375 14.125 2.375ZM15.25 11.75C15.25 12.0484 15.1315 12.3345 14.9205 12.5455C14.7095 12.7565 14.4234 12.875 14.125 12.875H1.875C1.57663 12.875 1.29048 12.7565 1.0795 12.5455C0.868526 12.3345 0.75 12.0484 0.75 11.75V4.25C0.75 3.95163 0.868526 3.66548 1.0795 3.4545C1.29048 3.24353 1.57663 3.125 1.875 3.125H14.125C14.4234 3.125 14.7095 3.24353 14.9205 3.4545C15.1315 3.66548 15.25 3.95163 15.25 4.25V11.75Z" fill="#BEAD8E"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_57_7521">
+          <rect width="16" height="16" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>
+        <input type="email" placeholder="Enter email address">
+      </div>
+      <div class="contact__form__input">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.75 14.25C2.47384 14.25 2.25 14.0261 2.25 13.75V2.0625C2.25 0.925219 3.17522 0 4.3125 0H13.25C13.5262 0 13.75 0.223875 13.75 0.5V12C13.75 12.2761 13.5262 12.5 13.25 12.5C12.9738 12.5 12.75 12.2761 12.75 12V1H4.3125C3.72662 1 3.25 1.47662 3.25 2.0625V13.75C3.25 14.0261 3.02616 14.25 2.75 14.25Z" fill="#BEAD8E"/>
+          <path d="M13.25 16H4.5C3.25934 16 2.25 14.9907 2.25 13.75C2.25 12.5093 3.25934 11.5 4.5 11.5H13.25C13.5262 11.5 13.75 11.7239 13.75 12C13.75 12.2761 13.5262 12.5 13.25 12.5H4.5C3.81075 12.5 3.25 13.0608 3.25 13.75C3.25 14.4392 3.81075 15 4.5 15H13.25C13.5262 15 13.75 15.2239 13.75 15.5C13.75 15.7761 13.5262 16 13.25 16Z" fill="#BEAD8E"/>
+          <path d="M13.25 14.25H4.5C4.22384 14.25 4 14.0261 4 13.75C4 13.4739 4.22384 13.25 4.5 13.25H13.25C13.5262 13.25 13.75 13.4739 13.75 13.75C13.75 14.0261 13.5262 14.25 13.25 14.25Z" fill="#BEAD8E"/>
+          <path d="M5 12.5C4.72384 12.5 4.5 12.2761 4.5 12V0.5C4.5 0.223875 4.72384 0 5 0C5.27616 0 5.5 0.223875 5.5 0.5V12C5.5 12.2761 5.27616 12.5 5 12.5Z" fill="#BEAD8E"/>
+        </svg>
+        <input type="text" placeholder="Enter subject">
+      </div>
+      <div class="contact__form__input">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.546 2.88058L13.1196 0.454198C12.8267 0.161288 12.4373 0 12.0231 0C11.6089 0 11.2195 0.161288 10.9266 0.454188L0.769599 10.611C0.673192 10.7075 0.611047 10.8328 0.592727 10.9679L0.00566508 15.2929C-0.0205025 15.4858 0.0449164 15.6798 0.182565 15.8174C0.300224 15.9351 0.459079 16 0.623225 16C0.651071 16 0.679097 15.9981 0.707095 15.9943L5.03208 15.4073C5.1672 15.3889 5.29257 15.3268 5.38898 15.2304L15.546 5.07357C15.8389 4.78069 16.0001 4.39127 16.0001 3.97709C16.0001 3.56287 15.8388 3.17346 15.546 2.88058ZM4.65618 14.2004L1.35098 14.649L1.79962 11.3438L8.99714 4.14641L11.8537 7.00296L4.65618 14.2004ZM14.6645 4.19214L12.7351 6.12153L9.87855 3.265L11.808 1.33561C11.8855 1.25809 11.976 1.24651 12.0231 1.24651C12.0701 1.24651 12.1606 1.25809 12.2382 1.33561L14.6646 3.76199C14.7421 3.83951 14.7536 3.93002 14.7536 3.97706C14.7536 4.0241 14.7421 4.11462 14.6645 4.19214Z" fill="#BEAD8E"/>
+        </svg>
+        <textarea type="text" placeholder="Enter message" rows="8"></textarea>
+      </div>
+
+      <button type="submit" class="contact__form__btn btn btn--yellow">SEND</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="footer__main__h">H</div>
+      <div class="footer__main__title">
+        <p class="footer__main__title__hotel">HOTEL</p>
+        <p class="footer__main__title__miranda">MIRANDA</p>
+      </div>
+    </div>
+    <div class="footer__text">
+      Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
+    </div>
+    <div class="footer__icon-bar">
+      <a class="footer__icon-bar__icon" href="">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_54_1197)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0678 0C22.6861 0 24 1.31391 24 2.93222V21.0678C24 22.6861 22.6861 24 21.0678 24H16.0771V14.9571H19.199L19.793 11.0843H16.0771V8.57095C16.0771 7.51144 16.5961 6.47864 18.2605 6.47864H19.95V3.18145C19.95 3.18145 18.4167 2.9198 16.9508 2.9198C13.8905 2.9198 11.8902 4.77459 11.8902 8.13248V11.0843H8.48836V14.9571H11.8902V24H2.93222C1.31391 24 0 22.6861 0 21.0678V2.93222C0 1.31391 1.31386 0 2.93222 0H21.0678V0Z" />
+          </g>
+          <defs>
+          <clipPath id="clip0_54_1197">
+          <rect width="24" height="24" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <a class="footer__icon-bar__icon" href="">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_54_1199)">
+          <path d="M21 24H3C1.344 24 0 22.656 0 21V3C0 1.344 1.344 0 3 0H21C22.656 0 24 1.344 24 3V21C24 22.656 22.656 24 21 24ZM9.216 18.096C14.874 18.096 17.97 13.404 17.97 9.342C17.97 9.21 17.97 9.078 17.964 8.946C18.564 8.514 19.086 7.968 19.5 7.35C18.948 7.596 18.354 7.758 17.73 7.836C18.366 7.458 18.852 6.852 19.086 6.132C18.492 6.486 17.832 6.738 17.13 6.876C16.566 6.276 15.768 5.904 14.886 5.904C13.188 5.904 11.808 7.284 11.808 8.982C11.808 9.222 11.838 9.456 11.886 9.684C9.33 9.558 7.062 8.328 5.544 6.468C5.28 6.924 5.13 7.452 5.13 8.016C5.13 9.084 5.676 10.026 6.498 10.578C5.994 10.56 5.52 10.422 5.106 10.194V10.236C5.106 11.724 6.168 12.972 7.572 13.254C7.314 13.326 7.044 13.362 6.762 13.362C6.564 13.362 6.372 13.344 6.186 13.308C6.576 14.532 7.716 15.42 9.06 15.444C8.004 16.272 6.678 16.764 5.238 16.764C4.992 16.764 4.746 16.752 4.506 16.722C5.862 17.586 7.482 18.096 9.216 18.096Z" />
+          </g>
+          <defs>
+          <clipPath id="clip0_54_1199">
+          <rect width="24" height="24" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <a class="footer__icon-bar__icon" href="">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_54_1195)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0678 0C22.6861 0 24 1.31391 24 2.93222V21.0678C24 22.6861 22.6861 24 21.0678 24H2.93222C1.31391 24 0 22.6861 0 21.0678V2.93222C0 1.31391 1.31386 0 2.93222 0H21.0678V0ZM21.3605 15.4995C21.4035 14.8515 21.3508 14.2328 21.2008 13.6404C21.0494 13.047 20.8066 12.518 20.4667 12.0556C20.1263 11.5922 19.6927 11.2221 19.1646 10.9487C18.6338 10.6718 18.0156 10.536 17.3091 10.536C16.6691 10.536 16.0912 10.6496 15.5671 10.8755C15.0435 11.1027 14.5939 11.4134 14.2144 11.8071C13.8359 12.1985 13.5474 12.6653 13.3397 13.2064C13.1355 13.7456 13.0312 14.3288 13.0312 14.9532C13.0312 15.5989 13.1316 16.1949 13.3308 16.7332C13.5323 17.2742 13.815 17.7349 14.1789 18.1245C14.5526 18.5129 14.9964 18.8102 15.5276 19.0228C16.0593 19.2323 16.6514 19.3388 17.3091 19.3388C18.253 19.3388 19.0625 19.1227 19.7269 18.6891C20.3993 18.2568 20.8914 17.5392 21.2163 16.534H19.1961C19.118 16.7923 18.9156 17.0413 18.5832 17.2742C18.2477 17.5077 17.8483 17.6244 17.3858 17.6244C16.7423 17.6244 16.2457 17.4558 15.9018 17.1203C15.5574 16.7847 15.3346 16.1599 15.3346 15.4995H21.3605ZM8.21423 19.1227C8.73173 19.1227 9.23634 19.0575 9.72225 18.9287C10.214 18.7996 10.652 18.6007 11.0341 18.3305C11.4132 18.0624 11.7207 17.715 11.9466 17.2862C12.1707 16.8624 12.2826 16.3591 12.2826 15.7742C12.2826 15.0526 12.1108 14.4375 11.7607 13.9231C11.4123 13.4123 10.8859 13.0532 10.1772 12.8491C10.6978 12.6023 11.0879 12.285 11.3532 11.898C11.6173 11.5102 11.7487 11.0251 11.7487 10.4446C11.7487 9.90802 11.6603 9.45403 11.485 9.09145C11.3048 8.72353 11.0532 8.4315 10.7319 8.2118C10.4053 7.99214 10.0196 7.83192 9.56695 7.73606C9.11203 7.63711 8.61408 7.58963 8.06245 7.58963H2.625V19.1227H8.21423ZM7.92487 13.9826C8.4712 13.9826 8.91544 14.1082 9.24919 14.3611C9.58158 14.6172 9.74934 15.0397 9.74934 15.6339C9.74934 15.9371 9.70008 16.1883 9.59756 16.3818C9.49547 16.5761 9.35437 16.7297 9.18483 16.8415C9.01439 16.9578 8.81334 17.0368 8.58614 17.0861C8.36245 17.1362 8.12456 17.1584 7.87472 17.1584H5.16398V13.9826H7.92487ZM18.5375 12.7324C18.2646 12.4311 17.8035 12.2677 17.2402 12.2677C16.8737 12.2677 16.5705 12.3294 16.3274 12.455C16.0895 12.5793 15.8951 12.7333 15.7464 12.9152C15.5982 13.0998 15.4979 13.2951 15.4389 13.5037C15.3803 13.707 15.3448 13.8911 15.3346 14.054H19.0661C19.0115 13.4691 18.8113 13.0364 18.5375 12.7324ZM7.54008 9.5543C7.76512 9.55434 7.98394 9.57028 8.19338 9.61111C8.40595 9.64795 8.5897 9.71541 8.75212 9.81352C8.91544 9.90802 9.04547 10.0425 9.14353 10.2147C9.23808 10.3869 9.28467 10.6088 9.28467 10.8768C9.28467 11.3606 9.14353 11.7125 8.85155 11.926C8.55642 12.1425 8.18363 12.2491 7.73405 12.2491H5.16398V9.5543H7.54008ZM19.54 9.50152V8.36358H14.865V9.50152H19.54Z" />
+          </g>
+          <defs>
+          <clipPath id="clip0_54_1195">
+          <rect width="24" height="24" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <a class="footer__icon-bar__icon" href="">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_54_1191)">
+          <path d="M12.6477 10.6753V10.6387C12.6401 10.651 12.632 10.6634 12.6239 10.6753H12.6477Z" />
+          <path d="M21.782 0H1.73748C0.778081 0 0 0.759521 0 1.6956V21.9747C0 22.9103 0.778081 23.6698 1.73748 23.6698H21.782C22.7428 23.6698 23.5209 22.9098 23.5209 21.9747V1.6956C23.5209 0.759045 22.7423 0 21.782 0ZM7.12931 19.8146H3.57679V9.12662H7.12931V19.8146ZM5.35329 7.66659H5.32949C4.13787 7.66659 3.36692 6.84568 3.36692 5.82014C3.36692 4.77175 4.16166 3.97368 5.37661 3.97368C6.59203 3.97368 7.33965 4.77175 7.36345 5.82014C7.36345 6.84568 6.59156 7.66659 5.35329 7.66659ZM19.9398 19.8146H16.3873V14.0954C16.3873 12.6592 15.8733 11.6788 14.5879 11.6788C13.6067 11.6788 13.0223 12.3398 12.7648 12.9785C12.6711 13.2064 12.6482 13.5253 12.6482 13.8451V19.8142H9.09569C9.09569 19.8142 9.14233 10.1279 9.09569 9.12615H12.6482V10.639C13.1203 9.91089 13.9645 8.87393 15.8505 8.87393C18.1876 8.87393 19.9403 10.402 19.9403 13.6852V19.8146H19.9398Z" />
+          </g>
+          <defs>
+          <clipPath id="clip0_54_1191">
+          <rect width="24" height="24" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <a class="footer__icon-bar__icon" href="">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_54_1189)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0678 0C22.6861 0 24 1.31391 24 2.93222V21.0678C24 22.6861 22.6861 24 21.0678 24H2.93222C1.31391 24 0 22.6861 0 21.0678V2.93222C0 1.31391 1.31386 0 2.93222 0H21.0678V0ZM20.085 8.23266C19.8909 7.50661 19.3192 6.93483 18.5931 6.74081C17.277 6.38812 12 6.38812 12 6.38812C12 6.38812 6.72305 6.38812 5.40689 6.74081C4.68098 6.93483 4.10911 7.50661 3.91505 8.23266C3.5625 9.54867 3.5625 12.2945 3.5625 12.2945C3.5625 12.2945 3.5625 15.0402 3.91505 16.3561C4.10911 17.0821 4.68098 17.6541 5.40689 17.8481C6.72305 18.2006 12 18.2006 12 18.2006C12 18.2006 17.277 18.2006 18.5931 17.8481C19.3192 17.6541 19.8909 17.0821 20.085 16.3561C20.4375 15.0402 20.4375 12.2945 20.4375 12.2945C20.4375 12.2945 20.4375 9.54867 20.085 8.23266ZM10.3124 14.8258V9.76317L14.6966 12.2945L10.3124 14.8258Z" />
+          </g>
+          <defs>
+          <clipPath id="clip0_54_1189">
+          <rect width="24" height="24" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>
+      </a>
+    </div>
+
+    <div class="footer__services">
+      <h4 class="footer__services__title">Services.</h4>
+      <div class="footer__services__options">
+        <div class="footer__services__options__box">
+          <p class="footer__services__options__title">+ Restaurant & Bar</p>
+        </div>
+        <div class="footer__services__options__box">
+          <p class="footer__services__options__title">+ Gaming Zone</p>
+        </div>
+        <div class="footer__services__options__box">
+          <p class="footer__services__options__title">+ Swimming Pool</p>
+        </div>
+        <div class="footer__services__options__box">
+          <p class="footer__services__options__title">+ Marrige Party</p>
+        </div>
+        <div class="footer__services__options__box">
+          <p class="footer__services__options__title">+ Wellness & Spa</p>
+        </div>
+        <div class="footer__services__options__box">
+          <p class="footer__services__options__title">+ Party Planning</p>
+        </div>
+        <div class="footer__services__options__box">
+          <p class="footer__services__options__title">+ Restaurant</p>
+        </div>
+        <div class="footer__services__options__box">
+          <p class="footer__services__options__title">+ Tour Consultancy</p>
+        </div>
+        <div class="footer__services__options__box">
+          <p class="footer__services__options__title">+ Conference Room</p>
+        </div>
+        <div class="footer__services__options__box">
+          <p class="footer__services__options__title">+ Coctail Party House</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__contact">
+      <h4 class="footer__contact__title">Contact Us.</h4>
+      <div class="footer__contact__box">
+        <svg class="footer__contact__box__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_54_1162)">
+          <path d="M38.9504 30.8574L30.8543 25.4582C29.8268 24.7786 28.4496 25.0022 27.69 25.9721L25.3317 29.0043C25.0286 29.404 24.4777 29.5199 24.0393 29.2763L23.5907 29.029C22.1035 28.2184 20.2532 27.2093 16.5251 23.4798C12.7969 19.7504 11.7858 17.8986 10.9752 16.4142L10.7292 15.9656C10.4823 15.5273 10.596 14.974 10.9958 14.6685L14.026 12.3109C14.9955 11.5512 15.2195 10.1744 14.5406 9.14665L9.14139 1.05051C8.44563 0.0039495 7.04974 -0.310223 5.97264 0.337259L2.58712 2.37094C1.52337 2.99632 0.742942 4.00914 0.409476 5.19716C-0.80964 9.63916 0.107489 17.3054 11.4005 28.5997C20.3839 37.5824 27.0715 39.998 31.6682 39.998C32.7261 40.0025 33.7798 39.8649 34.8011 39.5888C35.9894 39.2557 37.0023 38.4752 37.6273 37.4111L39.663 34.0276C40.3115 32.9503 39.9974 31.5536 38.9504 30.8574ZM38.5145 33.3437L36.4834 36.7292C36.0347 37.4972 35.3061 38.0619 34.4504 38.305C30.3497 39.4308 23.1854 38.4983 12.3436 27.6566C1.50189 16.8148 0.569452 9.65119 1.6953 5.54984C1.9387 4.6931 2.50409 3.9636 3.27304 3.51413L6.65855 1.4831C7.1259 1.2019 7.73175 1.3382 8.03366 1.79236L10.9666 6.19569L13.4283 9.88779C13.7231 10.3336 13.6262 10.9311 13.2056 11.261L10.1747 13.6186C9.25239 14.3239 8.98899 15.6 9.55687 16.6128L9.79754 17.0501C10.6494 18.6125 11.7086 20.5562 15.5754 24.4224C19.4421 28.2884 21.3852 29.3476 22.9469 30.1995L23.3848 30.4408C24.3976 31.0086 25.6738 30.7452 26.3791 29.8229L28.7367 26.792C29.0666 26.3717 29.6639 26.2749 30.1098 26.5694L38.2053 31.9686C38.6597 32.2703 38.7961 32.8764 38.5145 33.3437Z" fill="#BEAD8E"/>
+          <path d="M22.6655 6.66902C28.9209 6.67597 33.9901 11.7453 33.9972 18.0007C33.9972 18.3688 34.2955 18.6672 34.6637 18.6672C35.0318 18.6672 35.3302 18.3688 35.3302 18.0007C35.3225 11.0093 29.6569 5.34359 22.6655 5.33594C22.2973 5.33594 21.9989 5.63433 21.9989 6.00248C21.9989 6.37063 22.2973 6.66902 22.6655 6.66902Z" fill="#BEAD8E"/>
+          <path d="M22.6655 10.669C26.713 10.6738 29.993 13.9538 29.9977 18.0013C29.9977 18.3694 30.2962 18.6678 30.6643 18.6678C31.0324 18.6678 31.3308 18.3694 31.3308 18.0013C31.3253 13.2178 27.4489 9.34141 22.6655 9.33594C22.2973 9.33594 21.9989 9.63433 21.9989 10.0025C21.9989 10.3706 22.2973 10.669 22.6655 10.669Z" fill="#BEAD8E"/>
+          <path d="M22.6655 14.668C24.5052 14.6702 25.9961 16.1611 25.9983 18.0009C25.9983 18.3691 26.2968 18.6675 26.6649 18.6675C27.0329 18.6675 27.3314 18.3691 27.3314 18.0009C27.3285 15.4252 25.2412 13.3379 22.6655 13.335C22.2973 13.335 21.9989 13.6334 21.9989 14.0015C21.9989 14.3697 22.2973 14.668 22.6655 14.668Z" fill="#BEAD8E"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_54_1162">
+          <rect width="40" height="40" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>
+        <div class="footer__contact__box__content">
+          <h5 class="footer__contact__box__content__title">Phone Number</h5>
+          <p class="footer__contact__box__content__number">+987 876 765 76 577</p>
+        </div>
+      </div>
+      <div class="footer__contact__box">
+        <svg width="40" height="38" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <rect width="40" height="38" fill="url(#pattern7)"/>
+          <defs>
+          <pattern id="pattern7" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image0_54_1174" transform="scale(0.025 0.0263158)"/>
+          </pattern>
+          <image id="image0_54_1174" width="40" height="38" xlink:href="data:image/png;base64,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"/>
+          </defs>
+        </svg>
+        <div class="footer__contact__box__content">
+          <h5 class="footer__contact__box__content__title">Phone Number</h5>
+          <p class="footer__contact__box__content__number">+987 876 765 76 577</p>
+        </div>
+      </div>
+      <div class="footer__contact__box">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <rect width="40" height="40" fill="url(#pattern8)"/>
+          <defs>
+          <pattern id="pattern8" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image0_54_1175" transform="scale(0.025)"/>
+          </pattern>
+          <image id="image0_54_1175" width="40" height="40" xlink:href="data:image/png;base64,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"/>
+          </defs>
+        </svg>
+        <div class="footer__contact__box__content">
+          <h5 class="footer__contact__box__content__title">Phone Number</h5>
+          <p class="footer__contact__box__content__number">+987 876 765 76 577</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer__bottom">
+    <p class="footer__bottom__text">Copyright By@Example - 2020</p>
+    <div>
+      <p class="footer__bottom__text">Terms of use | Privacy Environmental Policy</p>
+    </div>
+  </div>
+
+  <script src="../resources/js/script.js"></script>
+  <script src="../resources/js/swiper.js" type="module"></script>
+</body>
+</html>
