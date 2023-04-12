@@ -194,7 +194,8 @@
 }
 .aboutus__card__img {
   width: 100%;
-  height: 320px;
+  aspect-ratio: 2/1;
+  min-height: 300px;
   object-fit: cover;
 }
 .aboutus__card__content {
@@ -265,7 +266,8 @@
 }
 .rooms__swiper {
   width: 100%;
-  height: 250px;
+  aspect-ratio: 2/1;
+  min-height: 250px;
 }
 .rooms__swiper__slide-1 {
   background: url("../resources/img/rooms-1.jpg") center/cover;
@@ -492,8 +494,8 @@
   object-fit: cover;
   margin: 20px;
   width: calc(100% - 40px);
-  height: 300px;
-  aspect-ratio: 1/1;
+  min-height: 250px;
+  aspect-ratio: 2/1;
   margin-bottom: 30px;
   background-color: black;
 }
@@ -677,6 +679,7 @@
 }
 .about-intro__video {
   width: 100%;
+  box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.25);
 }
 .about-intro__title {
   font-size: 32px;
@@ -692,6 +695,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
 }
 .about-intro__pick__box {
   width: 45%;
@@ -800,13 +805,13 @@
   font-size: 56px;
   letter-spacing: -1.2px;
   margin-top: 24px;
-  margin-bottom: 36px;
+  margin-bottom: 46px;
   color: #222222;
 }
 .counter__flex {
   display: flex;
   flex-direction: column;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 .counter__flex__box {
   display: flex;
@@ -834,7 +839,8 @@
 .counter__bottom-slider__img {
   object-fit: cover;
   width: 100%;
-  height: 250px;
+  aspect-ratio: 2/1;
+  min-height: 250px;
   margin-bottom: 30px;
   background-color: black;
 }
@@ -852,6 +858,8 @@
 }
 .rooms-flex__box__img {
   width: 100%;
+  aspect-ratio: 2/1;
+  min-height: 250px;
   object-fit: cover;
 }
 .rooms-flex__box__rect {
@@ -914,6 +922,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 600px;
   height: 40px;
   margin-top: 24px;
   margin-bottom: 24px;
@@ -1099,7 +1108,7 @@
 .related-rooms__nav-btn {
   position: absolute;
   z-index: 2;
-  top: 30%;
+  top: max(25vw, 150px);
   transform: translateY(-50%);
   width: 30px;
   height: 30px;

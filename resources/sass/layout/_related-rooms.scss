@@ -15,7 +15,7 @@
   &__nav-btn {
     position: absolute;
     z-index: 2;
-    top: 30%;
+    top: max(25vw, 150px);
     transform: translateY(-50%);
     width: 30px;
     height: 30px;

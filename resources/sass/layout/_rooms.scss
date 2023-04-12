@@ -34,7 +34,8 @@
 
   &__swiper {
     width: 100%;
-    height: 250px;
+    aspect-ratio: 2 / 1;
+    min-height: 250px;
 
     &__slide-1 {
       background: url('../resources/img/rooms-1.jpg') center / cover;
