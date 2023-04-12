@@ -1041,10 +1041,18 @@
   position: relative;
   display: inline-block;
 }
-.profile__img img {
+.profile__img__rosalina {
   border-radius: 50%;
 }
-.profile__img svg {
+.profile__img__tick {
+  border: 4px solid white;
+  background-color: #BDAC8D;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   left: 75%;
   top: 5%;
