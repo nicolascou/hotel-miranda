@@ -73,15 +73,21 @@
 
   <div class="calendar">
     <form class="calendar__form">
-      <label for="arrival" class="calendar__form__label">Arrival Date</label>
-      <div class="calendar__form__input">
-        <img src="resources/img/icons/calendar.svg" width="17" height="17" alt="calendar">
-        <input type="text" id="arrival" placeholder="24th March 2020">
-      </div>
-      <label for="ledeparture" class="calendar__form__label">LeDeparture Date</label>
-      <div class="calendar__form__input">
-        <img src="resources/img/icons/calendar.svg" width="17" height="17" alt="calendar">
-        <input type="text" id="ledeparture" placeholder="30th March 2020">
+      <div class="calendar__form__flex-desktop">
+        <div class="calendar__form__input-box">
+          <label for="arrival" class="calendar__form__label">Arrival Date</label>
+          <div class="calendar__form__input">
+            <img src="resources/img/icons/calendar.svg" width="17" height="17" alt="calendar">
+            <input type="text" id="arrival" placeholder="24th March 2020">
+          </div>
+        </div>
+        <div class="calendar__form__input-box">
+          <label for="ledeparture" class="calendar__form__label">LeDeparture Date</label>
+          <div class="calendar__form__input">
+            <img src="resources/img/icons/calendar.svg" width="17" height="17" alt="calendar">
+            <input type="text" id="ledeparture" placeholder="30th March 2020">
+          </div>
+        </div>
       </div>
       <button type="submit" class="calendar__form__btn btn btn--yellow">CHECK AVAILABILITY</button>
     </form>

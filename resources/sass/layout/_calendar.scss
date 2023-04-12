@@ -40,3 +40,37 @@
     }
   }
 }
+
+@media only screen and (min-width: 1000px) {
+  .calendar {
+    margin-top: 12px;
+    padding: 40px 18%;
+    
+    &__form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__flex-desktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 60%;
+      }
+      
+      &__input-box {
+        margin-right: 30px;
+        width: 100%;
+      }
+
+      &__input {
+        margin: 0;
+      }
+
+      &__btn {
+        margin: 0;
+        padding: 10px 15px;
+      }
+    }
+  }
+}
