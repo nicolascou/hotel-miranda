@@ -1244,6 +1244,7 @@
 }
 .contact__flex__box__icon {
   margin-right: 25px;
+  height: fit-content;
 }
 .contact__flex__box__content {
   max-width: 60%;
