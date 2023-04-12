@@ -29,11 +29,20 @@ function changeView(e) {
     const headerWrapperText = document.createElement('p');
     headerWrapperText.innerHTML = 'We make you Feel Comfortable';
     headerWrapperText.classList.add('header-wrapper__text');
+
+    const headerDesktop = document.createElement('header');
+    headerDesktop.classList.add('header-wrapper__header-desktop');
+    
+    const navbarDesktop = document.querySelector('.header__navbar').cloneNode(true);
+    navbarDesktop.classList.remove('d-none');
+
+    headerDesktop.appendChild(document.querySelector('.header__main').cloneNode(true));
+    headerDesktop.appendChild(navbarDesktop);
+    headerDesktop.appendChild(document.querySelector('.header__btns').cloneNode(true));
     
     headerWrapper.appendChild(headerWrapperText);
-
+    headerWrapper.appendChild(headerDesktop);
     document.body.insertAdjacentElement('afterbegin', headerWrapper);
-
   } else {
     if (!e) return;
     document.querySelector('.header-wrapper').remove();

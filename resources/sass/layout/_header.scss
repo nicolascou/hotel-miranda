@@ -23,6 +23,12 @@
   &__main {
     flex-basis: 50%;
 
+    &__flex {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
     &__anchor {
       display: flex;
       align-items: center;
@@ -86,13 +92,88 @@
 @media only screen and (min-width: 1000px) {
   .header {
     display: none;
+
+    &__main {
+      height: 100%;
+      flex-basis: 30%;
+
+      &__flex {
+        height: 100%;
+      }
+
+      &__h {
+        width: 80px;
+        height: 80px;
+        font-weight: 700;
+        font-size: 40px;
+      }
+
+      &__title {
+        margin-left: 25px;
+        letter-spacing: 2.6px;
+
+        p {
+          font-size: 26px;
+        }
+      }
+    }
+
+    &__navbar {
+      display: block;
+      box-shadow: none;
+      padding: 0;
+      flex-basis: 50%;
+      margin-left: 20px;
+      
+      ul {
+        width: min(90%, 400px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &__item {
+        margin-bottom: 0;
+      }
+    }
+
+    &__btns {
+      display: flex;
+
+      &__icon {
+        background-color: white !important;
+        margin-left: 20px;
+        border: 1px grey solid !important;
+        height: 60px;
+        width: 60px;
+      }
+    }
   }
   .header-wrapper {
     background-color: $color-dark;
     height: 100px;
+    padding-top: 10px;
+
     &__text {
       font-family: 'Roboto', sans-serif;
       color: white;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    &__header-desktop {
+      width: 80%;
+      background-color: white;
+      height: 120px;
+      position: fixed;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      z-index: 9;
     }
   }
 }
