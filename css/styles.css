@@ -706,20 +706,11 @@
   align-items: center;
   cursor: pointer;
 }
-.about-intro__pick__box .airplane-svg {
-  filter: invert(0.45) sepia(1);
-}
 .about-intro__pick__box:hover {
   background-color: #BEAD8E;
   color: white;
 }
-.about-intro__pick__box:hover svg {
-  fill: white;
-}
-.about-intro__pick__box:hover .airplane-svg {
-  filter: none;
-}
-.about-intro__pick__box:hover .coffee-svg {
+.about-intro__pick__box:hover img {
   filter: brightness(2);
 }
 .about-intro__pick__box__icon {

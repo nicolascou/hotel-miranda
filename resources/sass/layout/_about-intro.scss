@@ -35,20 +35,11 @@
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      .airplane-svg {
-        filter: invert(0.45) sepia(1);
-      }
 
       &:hover {
         background-color: $color-secondary;
         color: white;
-        svg {
-          fill: white;
-        }
-        .airplane-svg {
-          filter: none;
-        }
-        .coffee-svg {
+        img {
           filter: brightness(02);
         }
       }
