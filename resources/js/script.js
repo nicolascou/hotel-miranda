@@ -14,3 +14,14 @@ closeMenu.addEventListener('click', function() {
   closeMenu.classList.add('d-none');
   hamburgerBtn.classList.remove('d-none');
 })
+
+
+const desktopMediaQuery = window.matchMedia('(min-width: 1000px)');
+
+function checkMedia() {
+  if (desktopMediaQuery.matches) {
+    console.log(desktopMediaQuery);
+  }
+}
+
+window.addEventListener('resize', checkMedia);
