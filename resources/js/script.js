@@ -46,7 +46,6 @@ function changeView(e) {
   } else {
     if (!e) return;
     document.querySelector('.header-wrapper').remove();
-    console.log('mobile')
   }
 }
 
