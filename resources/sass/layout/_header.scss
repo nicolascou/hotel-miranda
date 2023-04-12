@@ -82,3 +82,17 @@
     }
   }
 }
+
+@media only screen and (min-width: 1000px) {
+  .header {
+    display: none;
+  }
+  .header-wrapper {
+    background-color: $color-dark;
+    height: 100px;
+    &__text {
+      font-family: 'Roboto', sans-serif;
+      color: white;
+    }
+  }
+}

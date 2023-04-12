@@ -70,6 +70,19 @@
   margin-bottom: 20px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .header {
+    display: none;
+  }
+  .header-wrapper {
+    background-color: #222222;
+    height: 100px;
+  }
+  .header-wrapper__text {
+    font-family: "Roboto", sans-serif;
+    color: white;
+  }
+}
 .hero {
   margin-top: 70px;
   background-color: #333333;

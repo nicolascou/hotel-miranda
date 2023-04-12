@@ -15,13 +15,30 @@ closeMenu.addEventListener('click', function() {
   hamburgerBtn.classList.remove('d-none');
 })
 
+// Handle Desktop design
+const media = matchMedia('(min-width: 1000px)');
+media.addEventListener('change', changeView);
 
-const desktopMediaQuery = window.matchMedia('(min-width: 1000px)');
+function changeView(e) {
+  if (media.matches) { // Desktop styles
+    
+    // Header
+    const headerWrapper = document.createElement('div');
+    headerWrapper.classList.add('header-wrapper');
 
-function checkMedia() {
-  if (desktopMediaQuery.matches) {
-    console.log(desktopMediaQuery);
+    const headerWrapperText = document.createElement('p');
+    headerWrapperText.innerHTML = 'We make you Feel Comfortable';
+    headerWrapperText.classList.add('header-wrapper__text');
+    
+    headerWrapper.appendChild(headerWrapperText);
+
+    document.body.insertAdjacentElement('afterbegin', headerWrapper);
+
+  } else {
+    if (!e) return;
+    document.querySelector('.header-wrapper').remove();
+    console.log('mobile')
   }
 }
 
-window.addEventListener('resize', checkMedia);
+changeView();
