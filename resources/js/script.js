@@ -44,6 +44,19 @@ function changeView(e) {
     headerWrapper.appendChild(headerDesktop);
     document.body.insertAdjacentElement('afterbegin', headerWrapper);
 
+    // About Us
+    document.querySelector('.counter__bottom-slider').classList.add('d-none-desktop');
+    const counterBottomDesktop = document.createElement('div');
+    counterBottomDesktop.classList.add('counter__bottom-desktop', 'only-desktop');
+    const counterImg1 = document.createElement('img');
+    const counterImg2 = document.createElement('img');
+    counterImg1.src = '../resources/img/counter-1.jpg';
+    counterImg2.src = '../resources/img/counter-2.jpg';
+    counterBottomDesktop.appendChild(counterImg1);
+    counterBottomDesktop.appendChild(counterImg2);
+
+    document.querySelector('.counter').appendChild(counterBottomDesktop);
+
     // Offers page
     const offerPrices = document.querySelectorAll('.offers-flex__box__prices');
     if (offerPrices.length > 0) {

@@ -1032,6 +1032,37 @@
   background-color: black;
 }
 
+@media only screen and (min-width: 1000px) {
+  .counter {
+    padding: 0 18%;
+    margin-bottom: 120px;
+  }
+  .counter__title {
+    font-size: 72px;
+  }
+  .counter__flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .counter__flex__box {
+    width: 30%;
+  }
+  .counter__bottom-desktop {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .counter__bottom-desktop img {
+    width: 50%;
+    height: 350px;
+    object-fit: cover;
+  }
+  .counter__bottom-desktop img:first-child {
+    margin-right: 30px;
+  }
+}
 .rooms-flex {
   padding: 48px 20px;
   padding-bottom: 0;

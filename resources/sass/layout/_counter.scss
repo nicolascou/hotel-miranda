@@ -61,3 +61,41 @@
     }
   }
 }
+
+@media only screen and (min-width: 1000px) {
+  .counter {
+    padding: 0 18%;
+    margin-bottom: 120px;
+
+    &__title {
+      font-size: 72px;
+    }
+
+    &__flex {
+      flex-direction: row;
+      justify-content: space-between;
+
+      &__box {
+        width: 30%;
+      }
+    }
+
+    &__bottom-desktop {
+      margin-top: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        width: 50%;
+        height: 350px;
+        object-fit: cover;
+
+        &:first-child {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+}
