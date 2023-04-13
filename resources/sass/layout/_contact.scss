@@ -98,7 +98,7 @@
 
 @media only screen and (min-width: 1000px) {
   .contact {
-    padding: 60px 18%;
+    padding: 60px $px-lg;
 
     &__flex {
       flex-direction: row;

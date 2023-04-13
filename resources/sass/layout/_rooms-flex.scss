@@ -116,7 +116,7 @@
 
 @media only screen and (min-width: 1000px) {
   .rooms-flex {
-    padding: 60px 18%;
+    padding: 60px $px-lg;
     padding-bottom: 0;
     flex-direction: row;
     flex-wrap: wrap;

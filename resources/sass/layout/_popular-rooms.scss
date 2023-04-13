@@ -71,7 +71,8 @@
 
 @media only screen and (min-width: 1000px) {
   .popular-rooms {
-    padding: 60px 18%;
+    padding: 60px $px-lg;
+    margin-bottom: 120px;
 
     &__title {
       margin: 50px 0;
@@ -89,19 +90,8 @@
       }
     }
 
-    .related-rooms__prev-btn {
+    .swiper {
       display: none;
-    }
-    .related-rooms__next-btn {
-      display: none;
-    }
-
-    .swiper-slide {
-      display: none;
-      > div {
-        display: block;
-        height: 100%;
-      }
     }
   }
 }

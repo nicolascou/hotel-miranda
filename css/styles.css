@@ -562,6 +562,30 @@
   margin-left: calc(100% - 80px);
 }
 
+@media only screen and (min-width: 1000px) {
+  .facilities {
+    padding: 80px 18%;
+    padding-bottom: 40px;
+  }
+  .facilities__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px 0;
+  }
+  .facilities-black__swiper-wrapper {
+    display: none;
+  }
+  .facilities-black .facilities__swiper__slide {
+    background-color: #292929;
+    width: 30% !important;
+    margin-bottom: 40px;
+  }
+  .facilities-black .facilities__swiper__slide__number {
+    right: 5px;
+  }
+}
 .menu-section {
   padding: 0 20px;
 }
@@ -890,7 +914,7 @@
     font-size: 72px;
     line-height: 89px;
     letter-spacing: -2.16px;
-    margin: 60px auto;
+    margin: 80px auto;
     margin-bottom: 40px;
   }
   .about-intro__pick {
@@ -1039,6 +1063,7 @@
   }
   .counter__title {
     font-size: 72px;
+    margin-bottom: 80px;
   }
   .counter__flex {
     flex-direction: row;
@@ -1542,6 +1567,7 @@
 @media only screen and (min-width: 1000px) {
   .popular-rooms {
     padding: 60px 18%;
+    margin-bottom: 120px;
   }
   .popular-rooms__title {
     margin: 50px 0;
@@ -1554,18 +1580,8 @@
   .popular-rooms__card__text {
     max-width: 100%;
   }
-  .popular-rooms .related-rooms__prev-btn {
+  .popular-rooms .swiper {
     display: none;
-  }
-  .popular-rooms .related-rooms__next-btn {
-    display: none;
-  }
-  .popular-rooms .swiper-slide {
-    display: none;
-  }
-  .popular-rooms .swiper-slide > div {
-    display: block;
-    height: 100%;
   }
 }
 .contact {

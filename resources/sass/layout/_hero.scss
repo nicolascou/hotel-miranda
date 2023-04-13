@@ -59,7 +59,7 @@
 @media only screen and (min-width: 1000px) {
   .hero {
     margin-top: 0;
-    padding: 140px 18% 0 18%;
+    padding: 140px $px-lg 0 $px-lg;
 
     &__title {
       font-size: 110px;

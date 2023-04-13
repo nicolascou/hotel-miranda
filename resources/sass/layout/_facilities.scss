@@ -66,3 +66,31 @@
     margin-left: calc(100% - 80px);
   }
 }
+
+@media only screen and (min-width: 1000px) {
+  .facilities {
+    padding: 80px $px-lg;
+    padding-bottom: 40px;
+
+    &__flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 40px 0;
+    }
+  }
+  .facilities-black {
+    &__swiper-wrapper {
+      display: none;
+    }
+    .facilities__swiper__slide {
+      background-color: #292929;
+      width: 30% !important; 
+      margin-bottom: 40px;
+      &__number {
+        right: 5px;
+      }
+    }
+  }
+}

@@ -60,14 +60,14 @@
 
 @media only screen and (min-width: 1000px) {
   .about-intro {
-    padding: 60px 18%;
+    padding: 60px $px-lg;
     padding-bottom: 30px;
 
     &__title {
       font-size: 72px;
       line-height: 89px;
       letter-spacing: -2.16px;
-      margin: 60px auto;
+      margin: 80px auto;
       margin-bottom: 40px;
     }
 

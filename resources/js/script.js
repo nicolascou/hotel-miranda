@@ -45,21 +45,34 @@ function changeView(e) {
     document.body.insertAdjacentElement('afterbegin', headerWrapper);
 
     // About Us
-    document.querySelector('.counter__bottom-slider').classList.add('d-none-desktop');
-    const counterBottomDesktop = document.createElement('div');
-    counterBottomDesktop.classList.add('counter__bottom-desktop', 'only-desktop');
-    const counterImg1 = document.createElement('img');
-    const counterImg2 = document.createElement('img');
-    counterImg1.src = '../resources/img/counter-1.jpg';
-    counterImg2.src = '../resources/img/counter-2.jpg';
-    counterBottomDesktop.appendChild(counterImg1);
-    counterBottomDesktop.appendChild(counterImg2);
+    if (window.location.pathname.split('/').pop() === 'about.html') {
+      document.querySelector('.counter__bottom-slider').classList.add('d-none-desktop');
+      const counterBottomDesktop = document.createElement('div');
+      counterBottomDesktop.classList.add('counter__bottom-desktop', 'only-desktop');
+      const counterImg1 = document.createElement('img');
+      const counterImg2 = document.createElement('img');
+      counterImg1.src = '../resources/img/counter-1.jpg';
+      counterImg2.src = '../resources/img/counter-2.jpg';
+      counterBottomDesktop.appendChild(counterImg1);
+      counterBottomDesktop.appendChild(counterImg2);
+  
+      document.querySelector('.counter').appendChild(counterBottomDesktop);
 
-    document.querySelector('.counter').appendChild(counterBottomDesktop);
+      const facilities = document.querySelector('.facilities-black');
+      const facilitiesFlex = document.createElement('div');
+      facilitiesFlex.classList.add('facilities__flex', 'only-desktop');
+      const cards = document.querySelectorAll('.facilities__swiper__slide');
+      cards.forEach((e) => {
+        const clone = e.cloneNode(true);
+        clone.classList.remove('swiper-slide');
+        facilitiesFlex.appendChild(clone);
+      })
+      facilities.appendChild(facilitiesFlex);
+    }
 
     // Offers page
-    const offerPrices = document.querySelectorAll('.offers-flex__box__prices');
-    if (offerPrices.length > 0) {
+    if (window.location.pathname.split('/').pop() === 'offers.html') {
+      const offerPrices = document.querySelectorAll('.offers-flex__box__prices');
       const offerNewParents = document.querySelectorAll('.offers-flex__box__first-row');
       
       const buttonsOffer = document.querySelectorAll('.offers-flex__box__btn');
@@ -77,14 +90,16 @@ function changeView(e) {
         secondRowFirstCols[i].appendChild(clonedButtonBoxOffer);
       }
 
-      // Popular rooms
-      // const slides = document.querySelectorAll('.popular-rooms .swiper-slide');
-      // slides.forEach((e) => {
-      //   e.classList.remove('swiper-slide')
-      // });
-
-      const popularRoomsFlex = document.querySelector('.popular-rooms .swiper-wrapper');
-      popularRoomsFlex.classList.add('popular-rooms__flex');
+      const popularRooms = document.querySelector('.popular-rooms');
+      const popularRoomsFlex = document.createElement('div');
+      popularRoomsFlex.classList.add('popular-rooms__flex', 'only-desktop');
+      const cards = document.querySelectorAll('.rooms-flex__box');
+      cards.forEach((e) => {
+        const clone = e.cloneNode(true);
+        clone.classList.remove('swiper-slide');
+        popularRoomsFlex.appendChild(clone);
+      })
+      popularRooms.appendChild(popularRoomsFlex);
     }
 
   } else {
