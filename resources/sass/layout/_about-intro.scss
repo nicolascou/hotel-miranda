@@ -57,3 +57,28 @@
     }
   }
 }
+
+@media only screen and (min-width: 1000px) {
+  .about-intro {
+    padding: 60px 18%;
+
+    &__title {
+      font-size: 72px;
+      line-height: 89px;
+      letter-spacing: -2.16px;
+      margin: 60px auto;
+      margin-bottom: 40px;
+    }
+
+    &__pick {
+      width: 100%;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      max-width: none;
+
+      &__box {
+        width: 200px;
+      }
+    }
+  }
+}

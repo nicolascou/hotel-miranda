@@ -54,6 +54,8 @@
   &__img {
     width: 100%;
     box-shadow: 0px 4px 16px rgba(138, 138, 138, 0.25);
+    max-height: 700px;
+    object-fit: cover;
   }
 
   &__form {

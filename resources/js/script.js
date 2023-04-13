@@ -46,7 +46,7 @@ function changeView(e) {
 
     // Offers page
     const offerPrices = document.querySelectorAll('.offers-flex__box__prices');
-    if (offerPrices) {
+    if (offerPrices.length > 0) {
       const offerNewParents = document.querySelectorAll('.offers-flex__box__first-row');
       
       const buttonsOffer = document.querySelectorAll('.offers-flex__box__btn');
@@ -63,6 +63,15 @@ function changeView(e) {
         clonedButtonBoxOffer.classList.add('only-desktop');
         secondRowFirstCols[i].appendChild(clonedButtonBoxOffer);
       }
+
+      // Popular rooms
+      // const slides = document.querySelectorAll('.popular-rooms .swiper-slide');
+      // slides.forEach((e) => {
+      //   e.classList.remove('swiper-slide')
+      // });
+
+      const popularRoomsFlex = document.querySelector('.popular-rooms .swiper-wrapper');
+      popularRoomsFlex.classList.add('popular-rooms__flex');
     }
 
   } else {

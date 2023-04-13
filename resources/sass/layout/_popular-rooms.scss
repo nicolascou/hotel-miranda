@@ -68,3 +68,40 @@
     }
   }
 }
+
+@media only screen and (min-width: 1000px) {
+  .popular-rooms {
+    padding: 60px 18%;
+
+    &__title {
+      margin: 50px 0;
+    }
+
+    &__flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__card {
+      &__text {
+        max-width: 100%;
+      }
+    }
+
+    .related-rooms__prev-btn {
+      display: none;
+    }
+    .related-rooms__next-btn {
+      display: none;
+    }
+
+    .swiper-slide {
+      display: none;
+      > div {
+        display: block;
+        height: 100%;
+      }
+    }
+  }
+}
