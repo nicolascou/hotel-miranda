@@ -162,3 +162,34 @@
     }
   }
 }
+
+
+@media only screen and (min-width: 1000px) {
+  .footer {
+    display: flex;
+    padding: 100px 15%;
+    justify-content: space-between;
+
+    &__first-col {
+      width: 30%;
+    }
+
+    &__services {
+      width: 30%;
+
+      &__options__box {
+        width: 40%;
+      }
+    }
+
+    &__bottom {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      &__text {
+        margin: 0;
+      }
+    }
+  }
+}
