@@ -44,15 +44,25 @@ function changeView(e) {
     headerWrapper.appendChild(headerDesktop);
     document.body.insertAdjacentElement('afterbegin', headerWrapper);
 
-    // Offers
-    const offer = document.querySelector('.offers-flex__box__prices');
-    if (offer) {
-      offer.classList.add('d-none');
-      const offerCard = document.querySelector('.offers-flex__box__card');
-      const clonedOffer = offer.cloneNode(true);
-      offerCard.appendChild(clonedOffer);
-      clonedOffer.classList.remove('d-none');
-      clonedOffer.classList.add('only-desktop');
+    // Offers page
+    const offerPrices = document.querySelectorAll('.offers-flex__box__prices');
+    if (offerPrices) {
+      const offerNewParents = document.querySelectorAll('.offers-flex__box__first-row');
+      
+      const buttonsOffer = document.querySelectorAll('.offers-flex__box__btn');
+      const secondRowFirstCols = document.querySelectorAll('.offers-flex__box__second-row__first-col');
+
+      for (let i = 0; i < offerPrices.length; i++) {
+        const clonedOffer = offerPrices[i].cloneNode(true);
+        offerPrices[i].classList.add('d-none-desktop');
+        clonedOffer.classList.add('only-desktop');
+        offerNewParents[i].appendChild(clonedOffer);
+
+        const clonedButtonBoxOffer = buttonsOffer[i].cloneNode(true);
+        buttonsOffer[i].classList.add('d-none-desktop');
+        clonedButtonBoxOffer.classList.add('only-desktop');
+        secondRowFirstCols[i].appendChild(clonedButtonBoxOffer);
+      }
     }
 
   } else {
@@ -60,8 +70,8 @@ function changeView(e) {
     const removeItems = document.querySelectorAll('.only-desktop');
     removeItems.forEach((e) => e.remove());
     
-    const offer = document.querySelector('.offers-flex__box__prices.d-none');
-    offer.classList.remove('d-none');
+    const showItems = document.querySelectorAll('.d-none-desktop');
+    showItems.forEach((e) => e.classList.remove('d-none-desktop'));
   }
 }
 
