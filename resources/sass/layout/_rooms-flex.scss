@@ -111,3 +111,22 @@
     }
   }
 }
+
+@media only screen and (min-width: 1000px) {
+  .rooms-flex {
+    padding: 100px 10%;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__box {
+      width: 350px;
+      margin: 0 20px;
+      margin-bottom: 20px;
+    }
+
+    &__pagination {
+      flex-basis: 100%;
+      margin-top: 50px;
+    }
+  }
+}
