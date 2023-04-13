@@ -1318,19 +1318,22 @@
   padding: 0 20px;
   padding-bottom: 32px;
 }
-.offers-flex__box__price {
+.offers-flex__box__prices {
   position: absolute;
-  font-weight: 700;
+  bottom: 10px;
   right: 20px;
+  text-align: right;
+}
+.offers-flex__box__price {
+  font-weight: 700;
   text-shadow: 1px 1px 0px #000;
 }
 .offers-flex__box__price--old {
-  bottom: 60px;
+  margin-bottom: 3px;
   font-size: 24px;
   color: #BEAD8E;
 }
 .offers-flex__box__price--new {
-  bottom: 10px;
   font-size: 36px;
   color: #DE5777;
 }
@@ -1344,12 +1347,47 @@
 }
 .offers-flex__box__img {
   width: 100%;
+  min-height: 220px;
+  object-fit: cover;
+  aspect-ratio: 2/1;
 }
 .offers-flex__box__btn {
   width: 65%;
   max-width: 400px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .offers-flex {
+    padding: 100px 18%;
+  }
+  .offers-flex__box {
+    box-shadow: none;
+  }
+  .offers-flex__box__img-wrapper {
+    margin-bottom: 0;
+  }
+  .offers-flex__box__card {
+    position: relative;
+    background-color: white;
+    z-index: 5;
+    margin: 0 auto;
+    margin-top: -60px;
+    width: 90%;
+    border-top: 6px solid #BEAD8E;
+    padding: 50px;
+  }
+  .offers-flex__box__prices {
+    right: 60px;
+    top: 60px;
+  }
+  .offers-flex__box__price {
+    text-shadow: none;
+  }
+  .offer__title {
+    padding-bottom: 35px;
+    border-bottom: 2px solid #ECECEC;
+  }
+}
 .popular-rooms {
   padding: 48px 20px;
   text-align: center;

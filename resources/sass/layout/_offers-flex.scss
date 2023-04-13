@@ -16,20 +16,24 @@
       padding-bottom: 32px;
     }
 
-    &__price {
+    &__prices {
       position: absolute;
-      font-weight: 700;
+      bottom: 10px;
       right: 20px;
+      text-align: right;
+    }
+
+    &__price {
+      font-weight: 700;
       text-shadow: 1px 1px 0px #000;
 
       &--old {
-        bottom: 60px;
+        margin-bottom: 3px;
         font-size: 24px;
         color: $color-secondary;
       }
 
       &--new {
-        bottom: 10px;
         font-size: 36px;
         color: #DE5777;
       }
@@ -47,11 +51,55 @@
 
     &__img {
       width: 100%;
+      min-height: 220px;
+      object-fit: cover;
+      aspect-ratio: 2 / 1;
     }
 
     &__btn {
       width: 65%;
       max-width: 400px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .offers-flex {
+    padding: 100px 18%;
+
+    &__box {
+      box-shadow: none;
+
+      &__img-wrapper {
+        margin-bottom: 0;
+      }
+      
+      &__card {
+        position: relative;
+        background-color: white;
+        z-index: 5;
+        margin: 0 auto;
+        margin-top: -60px;
+        width: 90%;
+        border-top: 6px solid $color-secondary;
+        padding: 50px;
+      }
+
+      &__prices {
+        right: 60px;
+        top: 60px;
+      }
+      
+      &__price {
+        text-shadow: none;
+      }
+    }
+  }
+
+  .offer {
+    &__title {
+      padding-bottom: 35px;
+      border-bottom: 2px solid #ECECEC;;
     }
   }
 }

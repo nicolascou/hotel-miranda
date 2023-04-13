@@ -24,7 +24,7 @@ function changeView(e) {
     
     // Header
     const headerWrapper = document.createElement('div');
-    headerWrapper.classList.add('header-wrapper');
+    headerWrapper.classList.add('header-wrapper', 'only-desktop');
 
     const headerWrapperText = document.createElement('p');
     headerWrapperText.innerHTML = 'We make you Feel Comfortable';
@@ -43,9 +43,25 @@ function changeView(e) {
     headerWrapper.appendChild(headerWrapperText);
     headerWrapper.appendChild(headerDesktop);
     document.body.insertAdjacentElement('afterbegin', headerWrapper);
+
+    // Offers
+    const offer = document.querySelector('.offers-flex__box__prices');
+    if (offer) {
+      offer.classList.add('d-none');
+      const offerCard = document.querySelector('.offers-flex__box__card');
+      const clonedOffer = offer.cloneNode(true);
+      offerCard.appendChild(clonedOffer);
+      clonedOffer.classList.remove('d-none');
+      clonedOffer.classList.add('only-desktop');
+    }
+
   } else {
     if (!e) return;
-    document.querySelector('.header-wrapper').remove();
+    const removeItems = document.querySelectorAll('.only-desktop');
+    removeItems.forEach((e) => e.remove());
+    
+    const offer = document.querySelector('.offers-flex__box__prices.d-none');
+    offer.classList.remove('d-none');
   }
 }
 
