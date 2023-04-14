@@ -1538,7 +1538,7 @@
 
 @media only screen and (min-width: 1000px) {
   .amenities {
-    padding: 100px 18%;
+    padding: 50px 18%;
     padding-right: 35%;
   }
   .amenities__flex__box {
@@ -1592,6 +1592,18 @@
   margin-bottom: 30px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .profile {
+    width: 370px;
+    margin: 0 18%;
+    box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.27);
+    padding: 25px 25px;
+    padding-top: 60px;
+  }
+  .profile__text {
+    max-width: none;
+  }
+}
 .cancellation {
   padding: 20px;
   margin-bottom: 100px;
@@ -1606,6 +1618,12 @@
   margin-top: 32px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .cancellation {
+    margin: 100px 18%;
+    margin-right: 35%;
+  }
+}
 .related-rooms {
   padding: 20px;
   margin-bottom: 50px;

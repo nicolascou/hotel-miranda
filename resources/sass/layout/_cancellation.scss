@@ -1,3 +1,5 @@
+@import "../globals";
+
 .cancellation {
   padding: $px-sm;
   margin-bottom: 100px;
@@ -11,5 +13,12 @@
 
   &__text {
     margin-top: 32px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .cancellation {
+    margin: 100px 18%;
+    margin-right: 35%;
   }
 }
