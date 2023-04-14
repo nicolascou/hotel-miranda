@@ -1536,6 +1536,15 @@
   margin-right: 5px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .amenities {
+    padding: 100px 18%;
+    padding-right: 35%;
+  }
+  .amenities__flex__box {
+    width: 200px;
+  }
+}
 .profile {
   padding: 30px 20px;
   text-align: center;
