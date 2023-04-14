@@ -537,6 +537,7 @@
 @media only screen and (min-width: 1000px) {
   .rooms {
     padding: 100px 0;
+    padding-top: 0;
   }
   .rooms__rect {
     width: 310px;
