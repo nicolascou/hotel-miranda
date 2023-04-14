@@ -1,2 +1,2 @@
 # Hotel Miranda
-Maquetación del hotel miranda
+Maquetación del [Hotel Miranda](https://nicolascou.github.io/hotel-miranda/).

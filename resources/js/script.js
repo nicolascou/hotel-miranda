@@ -98,11 +98,11 @@ function changeView(e) {
       const clonedOption1 = option.cloneNode(true);
       const clonedOption2 = option.cloneNode(true);
       const clonedOption3 = option.cloneNode(true);
-      clonedOption1.children[0].src = '../resources/img/fruit.jpg';
+      clonedOption1.children[0].src = 'resources/img/fruit.jpg';
       clonedOption1.children[1].children[0].innerHTML = 'Fruit Parfait';
-      clonedOption2.children[0].src = '../resources/img/marmalade.jpg';
+      clonedOption2.children[0].src = 'resources/img/marmalade.jpg';
       clonedOption2.children[1].children[0].innerHTML = 'Marmalade Selection';
-      clonedOption3.children[0].src = '../resources/img/cheese.jpg';
+      clonedOption3.children[0].src = 'resources/img/cheese.jpg';
       clonedOption3.children[1].children[0].innerHTML = 'Cheese Plate';
       secondCol.appendChild(clonedOption1);
       secondCol.appendChild(clonedOption2);
@@ -115,9 +115,9 @@ function changeView(e) {
       const menuImg1 = document.createElement('img');
       const menuImg2 = document.createElement('img');
       const menuImg3 = document.createElement('img');
-      menuImg1.src = '../resources/img/menu-1.jpg';
-      menuImg2.src = '../resources/img/menu-2.jpg';
-      menuImg3.src = '../resources/img/menu-3.jpg';
+      menuImg1.src = 'resources/img/menu-1.jpg';
+      menuImg2.src = 'resources/img/menu-2.jpg';
+      menuImg3.src = 'resources/img/menu-3.jpg';
       menuBottomDesktop.appendChild(menuImg1);
       menuBottomDesktop.appendChild(menuImg2);
       menuBottomDesktop.appendChild(menuImg3);
