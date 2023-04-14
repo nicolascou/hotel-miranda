@@ -155,5 +155,20 @@
         }
       }
     }
+
+    &__bottom-desktop {
+      margin-top: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        width: 32%;
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+        margin: 0;
+      }
+    }
   }
 }

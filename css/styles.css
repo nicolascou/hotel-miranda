@@ -817,6 +817,19 @@
   .menu-section__menu__pagination__prev {
     margin-right: 25px;
   }
+  .menu-section__bottom-desktop {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-section__bottom-desktop img {
+    width: 32%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    margin: 0;
+  }
 }
 .summary {
   background-color: #222222;

@@ -71,7 +71,9 @@ function changeView(e) {
 
       document.querySelector('.menu-section__head').appendChild(cloneMenuButtons);
 
-      const secondCol = document.querySelector('.menu-section__menu__second-col');
+      const menuOfMenu = document.querySelector('.menu-section__menu');
+      const secondCol = document.createElement('div');
+      secondCol.classList.add('menu-section__menu__second-col', 'only-desktop');
       const option = document.querySelector('.menu-section__menu__option');
       const clonedOption1 = option.cloneNode(true);
       const clonedOption2 = option.cloneNode(true);
@@ -85,6 +87,21 @@ function changeView(e) {
       secondCol.appendChild(clonedOption1);
       secondCol.appendChild(clonedOption2);
       secondCol.appendChild(clonedOption3);
+      menuOfMenu.appendChild(secondCol);
+
+      document.querySelector('.menu-section__bottom-slider').classList.add('d-none-desktop');
+      const menuBottomDesktop = document.createElement('div');
+      menuBottomDesktop.classList.add('menu-section__bottom-desktop', 'only-desktop');
+      const menuImg1 = document.createElement('img');
+      const menuImg2 = document.createElement('img');
+      const menuImg3 = document.createElement('img');
+      menuImg1.src = '../resources/img/menu-1.jpg';
+      menuImg2.src = '../resources/img/menu-2.jpg';
+      menuImg3.src = '../resources/img/menu-3.jpg';
+      menuBottomDesktop.appendChild(menuImg1);
+      menuBottomDesktop.appendChild(menuImg2);
+      menuBottomDesktop.appendChild(menuImg3);
+      document.querySelector('.menu-section').appendChild(menuBottomDesktop);
     }
 
     // About Us
@@ -98,7 +115,6 @@ function changeView(e) {
       counterImg2.src = '../resources/img/counter-2.jpg';
       counterBottomDesktop.appendChild(counterImg1);
       counterBottomDesktop.appendChild(counterImg2);
-  
       document.querySelector('.counter').appendChild(counterBottomDesktop);
 
       const facilities = document.querySelector('.facilities-black');
