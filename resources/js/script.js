@@ -65,6 +65,12 @@ function changeView(e) {
       
       aboutusFirstCol.appendChild(aboutusImg1);
       aboutusSecondCol.insertAdjacentElement('afterbegin', aboutusImg2);
+
+      const roomsSlider = document.querySelector('.rooms__swiper');
+      if (roomsSlider) {
+        roomsSlider.classList.remove('rooms__swiper');
+        roomsSlider.classList.add('rooms__swiper-desktop');
+      }
       
       const video = document.querySelector('.intro-video__video');
       const cloneVideo = video.cloneNode(true);
@@ -183,6 +189,13 @@ function changeView(e) {
 
     // Room details
     if (window.location.pathname.split('/').pop() === 'room_details.html') {
+      const offer = document.querySelector('.offer');
+      const offerForm = document.querySelector('.offer__form');
+      const cloneOfferForm = offerForm.cloneNode(true);
+      offerForm.classList.add('d-none-desktop');
+      cloneOfferForm.classList.add('offer__right-col', 'only-desktop');
+      offer.appendChild(cloneOfferForm);
+      
       const relatedRooms = document.querySelector('.related-rooms');
       const relatedRoomsFlex = document.createElement('div');
       relatedRoomsFlex.classList.add('related-rooms__flex', 'only-desktop');
@@ -199,6 +212,12 @@ function changeView(e) {
     if (!e) return;
     const removeItems = document.querySelectorAll('.only-desktop');
     removeItems.forEach((e) => e.remove());
+
+    const roomsSlider = document.querySelector('.rooms__swiper-desktop');
+    if (roomsSlider) {
+      roomsSlider.classList.remove('rooms__swiper-desktop');
+      roomsSlider.classList.add('rooms__swiper');
+    }
     
     const showItems = document.querySelectorAll('.d-none-desktop');
     showItems.forEach((e) => e.classList.remove('d-none-desktop'));

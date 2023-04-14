@@ -536,22 +536,22 @@
   .rooms__rect {
     width: 310px;
   }
-  .rooms__swiper {
+  .rooms__swiper-desktop {
     height: 400px;
   }
-  .rooms__swiper__prev-btn {
+  .rooms__swiper-desktop .rooms__swiper__prev-btn {
     width: 50px;
     height: 50px;
   }
-  .rooms__swiper__prev-btn img {
+  .rooms__swiper-desktop .rooms__swiper__prev-btn img {
     height: 20px;
     width: 20px;
   }
-  .rooms__swiper__next-btn {
+  .rooms__swiper-desktop .rooms__swiper__next-btn {
     height: 50px;
     width: 50px;
   }
-  .rooms__swiper__next-btn img {
+  .rooms__swiper-desktop .rooms__swiper__next-btn img {
     height: 20px;
     width: 20px;
   }
@@ -1502,6 +1502,24 @@
 @media only screen and (min-width: 1000px) {
   .offer {
     padding: 100px 18%;
+    display: flex;
+    position: relative;
+  }
+  .offer__left-col {
+    width: 65%;
+  }
+  .offer__right-col {
+    width: 33%;
+    margin-left: auto;
+  }
+  .offer__head {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    width: 36%;
+    padding: 10px 40px;
   }
 }
 .amenities {
@@ -1539,7 +1557,10 @@
 @media only screen and (min-width: 1000px) {
   .amenities {
     padding: 50px 18%;
-    padding-right: 35%;
+    padding-right: 40%;
+  }
+  .amenities__flex {
+    justify-content: space-between;
   }
   .amenities__flex__box {
     width: 200px;
@@ -1621,7 +1642,7 @@
 @media only screen and (min-width: 1000px) {
   .cancellation {
     margin: 100px 18%;
-    margin-right: 35%;
+    margin-right: 40%;
   }
 }
 .related-rooms {

@@ -40,9 +40,11 @@
 @media only screen and (min-width: 1000px) {
   .amenities {
     padding: 50px $px-lg;
-    padding-right: 35%;
+    padding-right: 40%;
 
     &__flex {
+      justify-content: space-between;
+      
       &__box {
         width: 200px;
       }

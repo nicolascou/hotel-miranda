@@ -78,5 +78,26 @@
 @media only screen and (min-width: 1000px) {
   .offer {
     padding: 100px $px-lg;
+    display: flex;
+    position: relative;
+
+    &__left-col {
+      width: 65%;
+    }
+
+    &__right-col {
+      width: 33%;
+      margin-left: auto;
+    }
+
+    &__head {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+      width: 36%;
+      padding: 10px 40px;
+    }
   }
 }
