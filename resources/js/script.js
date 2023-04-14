@@ -45,7 +45,13 @@ function changeView(e) {
     document.body.insertAdjacentElement('afterbegin', headerWrapper);
 
     // Home
-    if (window.location.pathname.split('/').pop() === '') {
+    if (window.location.pathname.split('/').pop() === 'index.html') {
+      const video = document.querySelector('.intro-video__video');
+      const cloneVideo = video.cloneNode(true);
+      video.classList.add('d-none-desktop');
+      cloneVideo.classList.add('only-desktop');
+
+      document.querySelector('.intro-video').appendChild(cloneVideo);
     }
 
     // About Us
