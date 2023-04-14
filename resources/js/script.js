@@ -45,7 +45,7 @@ function changeView(e) {
     document.body.insertAdjacentElement('afterbegin', headerWrapper);
 
     // Home
-    if (window.location.pathname.split('/').pop() === 'index.html') {
+    if (window.location.pathname.split('/').pop() === 'index.html' || window.location.pathname.split('/').pop() === '') {
 
       const aboutus = document.querySelector('.aboutus');
       const aboutusFirstCol = document.querySelector('.aboutus__first-col__first-col');
@@ -179,6 +179,20 @@ function changeView(e) {
         popularRoomsFlex.appendChild(clone);
       })
       popularRooms.appendChild(popularRoomsFlex);
+    }
+
+    // Room details
+    if (window.location.pathname.split('/').pop() === 'room_details.html') {
+      const relatedRooms = document.querySelector('.related-rooms');
+      const relatedRoomsFlex = document.createElement('div');
+      relatedRoomsFlex.classList.add('related-rooms__flex', 'only-desktop');
+      const cards = document.querySelectorAll('.rooms-flex__box');
+      cards.forEach((e) => {
+        const clone = e.cloneNode(true);
+        clone.classList.remove('swiper-slide');
+        relatedRoomsFlex.appendChild(clone);
+      })
+      relatedRooms.appendChild(relatedRoomsFlex);
     }
 
   } else {
