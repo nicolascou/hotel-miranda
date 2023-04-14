@@ -52,6 +52,17 @@ function changeView(e) {
       cloneVideo.classList.add('only-desktop');
 
       document.querySelector('.intro-video').appendChild(cloneVideo);
+
+      const facilities = document.querySelector('.facilities');
+      const facilitiesFlex = document.createElement('div');
+      facilitiesFlex.classList.add('facilities__flex', 'only-desktop');
+      const cards = document.querySelectorAll('.facilities__swiper__slide');
+      cards.forEach((e) => {
+        const clone = e.cloneNode(true);
+        clone.classList.remove('swiper-slide');
+        facilitiesFlex.appendChild(clone);
+      })
+      facilities.appendChild(facilitiesFlex);
     }
 
     // About Us

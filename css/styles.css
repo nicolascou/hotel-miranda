@@ -649,8 +649,9 @@
 
 @media only screen and (min-width: 1000px) {
   .facilities {
-    padding: 80px 18%;
+    padding: 100px 18%;
     padding-bottom: 40px;
+    position: relative;
   }
   .facilities__flex {
     display: flex;
@@ -659,16 +660,29 @@
     flex-wrap: wrap;
     margin: 40px 0;
   }
+  .facilities .swiper-wrapper {
+    display: none;
+  }
+  .facilities__swiper__slide {
+    width: 30% !important;
+    margin-bottom: 40px;
+  }
+  .facilities__swiper__slide__number {
+    right: 5px;
+  }
+  .facilities__bottom-img {
+    position: absolute;
+    bottom: -100px;
+    left: 80px;
+    margin: 0;
+    width: 200px;
+    height: 200px;
+  }
   .facilities-black__swiper-wrapper {
     display: none;
   }
   .facilities-black .facilities__swiper__slide {
     background-color: #292929;
-    width: 30% !important;
-    margin-bottom: 40px;
-  }
-  .facilities-black .facilities__swiper__slide__number {
-    right: 5px;
   }
 }
 .menu-section {

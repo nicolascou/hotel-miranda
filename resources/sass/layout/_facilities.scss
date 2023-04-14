@@ -90,8 +90,9 @@
 
 @media only screen and (min-width: 1000px) {
   .facilities {
-    padding: 80px $px-lg;
+    padding: 100px $px-lg;
     padding-bottom: 40px;
+    position: relative;
 
     &__flex {
       display: flex;
@@ -100,6 +101,27 @@
       flex-wrap: wrap;
       margin: 40px 0;
     }
+
+    .swiper-wrapper {
+      display: none;
+    }
+
+    &__swiper__slide {
+      width: 30% !important; 
+      margin-bottom: 40px;
+      &__number {
+        right: 5px;
+      }
+    }
+
+    &__bottom-img {
+      position: absolute;
+      bottom: -100px;
+      left: 80px;
+      margin: 0;
+      width: 200px;
+      height: 200px;
+    }
   }
   .facilities-black {
     &__swiper-wrapper {
@@ -107,11 +129,6 @@
     }
     .facilities__swiper__slide {
       background-color: #292929;
-      width: 30% !important; 
-      margin-bottom: 40px;
-      &__number {
-        right: 5px;
-      }
     }
   }
 }
