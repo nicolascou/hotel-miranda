@@ -67,6 +67,27 @@
   }
 }
 
+.facilities-black {
+  background-color: $color-dark;
+  margin-bottom: 60px;
+  
+  &__text {
+    color: white;
+  }
+
+  &__number {
+    color: #222;
+  }
+
+  &__swiper-wrapper {
+    padding: $px-sm;
+  }
+
+  &__swiper {
+    background-color: #292929;
+  }
+}
+
 @media only screen and (min-width: 1000px) {
   .facilities {
     padding: 80px $px-lg;

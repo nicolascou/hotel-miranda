@@ -115,3 +115,42 @@
     }
   }
 }
+
+@media only screen and (min-width: 1000px) {
+  .rooms {
+    padding: 100px 0;
+
+    &__rect {
+      width: 310px;
+    }
+
+    &__swiper {
+      height: 400px;
+      
+      &__prev-btn {
+        width: 50px;
+        height: 50px;
+        img {
+          height: 20px;
+          width: 20px;
+        }
+      }
+      
+      &__next-btn {
+        height: 50px;
+        width: 50px;
+        img {
+          height: 20px;
+          width: 20px;
+        }
+      }
+    }
+
+    &__offer {
+      width: 60%;
+      max-width: 700px;
+      margin: 0 auto;
+      margin-top: -50px;
+    }
+  }
+}

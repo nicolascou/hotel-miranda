@@ -10,6 +10,9 @@ new Swiper('.rooms__swiper', {
     prevEl: '.rooms__swiper__prev-btn',
     nextEl: '.rooms__swiper__next-btn',
   },
+  slidesPerView: 2,
+  centeredSlides: true,
+  spaceBetween: 20
 });
 
 new Swiper('.facilities__swiper', {

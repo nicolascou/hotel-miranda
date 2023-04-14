@@ -44,6 +44,10 @@ function changeView(e) {
     headerWrapper.appendChild(headerDesktop);
     document.body.insertAdjacentElement('afterbegin', headerWrapper);
 
+    // Home
+    if (window.location.pathname.split('/').pop() === '') {
+    }
+
     // About Us
     if (window.location.pathname.split('/').pop() === 'about.html') {
       document.querySelector('.counter__bottom-slider').classList.add('d-none-desktop');
