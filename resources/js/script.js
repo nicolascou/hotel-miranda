@@ -66,12 +66,6 @@ function changeView(e) {
       aboutusFirstCol.appendChild(aboutusImg1);
       aboutusSecondCol.insertAdjacentElement('afterbegin', aboutusImg2);
 
-      const roomsSlider = document.querySelector('.rooms__swiper');
-      if (roomsSlider) {
-        roomsSlider.classList.remove('rooms__swiper');
-        roomsSlider.classList.add('rooms__swiper-desktop');
-      }
-      
       const video = document.querySelector('.intro-video__video');
       const cloneVideo = video.cloneNode(true);
       video.classList.add('d-none-desktop');
@@ -213,12 +207,6 @@ function changeView(e) {
     const removeItems = document.querySelectorAll('.only-desktop');
     removeItems.forEach((e) => e.remove());
 
-    const roomsSlider = document.querySelector('.rooms__swiper-desktop');
-    if (roomsSlider) {
-      roomsSlider.classList.remove('rooms__swiper-desktop');
-      roomsSlider.classList.add('rooms__swiper');
-    }
-    
     const showItems = document.querySelectorAll('.d-none-desktop');
     showItems.forEach((e) => e.classList.remove('d-none-desktop'));
   }

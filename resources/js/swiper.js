@@ -22,9 +22,9 @@ new Swiper('.rooms__swiper-desktop', {
     prevEl: '.rooms__swiper__prev-btn',
     nextEl: '.rooms__swiper__next-btn',
   },
-  slidesPerView: 2,
+  slidesPerView: 1.5,
   centeredSlides: true,
-  spaceBetween: 20
+  spaceBetween: 20,
 });
 
 new Swiper('.facilities__swiper', {

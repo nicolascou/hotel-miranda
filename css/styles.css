@@ -388,14 +388,15 @@
   }
   .aboutus__main__title {
     text-align: left;
-    font-size: 80px;
+    font-size: 70px;
     line-height: 85px;
   }
   .aboutus__first-col {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-right: 80px;
+    width: 80%;
+    margin-right: 4%;
   }
   .aboutus__first-col__first-col {
     margin-right: 50px;
@@ -403,8 +404,8 @@
     flex-direction: column;
   }
   .aboutus__desktop-img {
-    height: 300px;
-    width: 270px;
+    aspect-ratio: 1/1;
+    width: 100%;
     object-fit: cover;
     margin-bottom: 30px;
   }
@@ -413,8 +414,8 @@
   }
   .aboutus__card {
     margin: 0;
-    width: 270px;
-    height: 300px;
+    width: 100%;
+    aspect-ratio: 1/1;
   }
   .aboutus__card__img {
     display: none;
@@ -529,6 +530,10 @@
   font-size: 14px;
 }
 
+.rooms__swiper-desktop {
+  display: none;
+}
+
 @media only screen and (min-width: 1000px) {
   .rooms {
     padding: 100px 0;
@@ -537,6 +542,7 @@
     width: 310px;
   }
   .rooms__swiper-desktop {
+    display: block;
     height: 400px;
   }
   .rooms__swiper-desktop .rooms__swiper__prev-btn {
@@ -560,6 +566,9 @@
     max-width: 700px;
     margin: 0 auto;
     margin-top: -50px;
+  }
+  .rooms__swiper {
+    display: none !important;
   }
 }
 .intro-video {

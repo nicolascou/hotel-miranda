@@ -116,6 +116,10 @@
   }
 }
 
+.rooms__swiper-desktop {
+  display: none;
+}
+
 @media only screen and (min-width: 1000px) {
   .rooms {
     padding: 100px 0;
@@ -125,6 +129,7 @@
     }
 
     &__swiper-desktop {
+      display: block;
       height: 400px;
       
       .rooms__swiper__prev-btn {
@@ -152,5 +157,9 @@
       margin: 0 auto;
       margin-top: -50px;
     }
+  }
+
+  .rooms__swiper {
+    display: none !important;
   }
 }
