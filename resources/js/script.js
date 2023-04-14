@@ -63,6 +63,28 @@ function changeView(e) {
         facilitiesFlex.appendChild(clone);
       })
       facilities.appendChild(facilitiesFlex);
+
+      const menuButtons = document.querySelector('.menu-section__menu__pagination');
+      const cloneMenuButtons = menuButtons.cloneNode(true);
+      menuButtons.classList.add('d-none-desktop');
+      cloneMenuButtons.classList.add('only-desktop');
+
+      document.querySelector('.menu-section__head').appendChild(cloneMenuButtons);
+
+      const secondCol = document.querySelector('.menu-section__menu__second-col');
+      const option = document.querySelector('.menu-section__menu__option');
+      const clonedOption1 = option.cloneNode(true);
+      const clonedOption2 = option.cloneNode(true);
+      const clonedOption3 = option.cloneNode(true);
+      clonedOption1.children[0].src = '../resources/img/fruit.jpg';
+      clonedOption1.children[1].children[0].innerHTML = 'Fruit Parfait';
+      clonedOption2.children[0].src = '../resources/img/marmalade.jpg';
+      clonedOption2.children[1].children[0].innerHTML = 'Marmalade Selection';
+      clonedOption3.children[0].src = '../resources/img/cheese.jpg';
+      clonedOption3.children[1].children[0].innerHTML = 'Cheese Plate';
+      secondCol.appendChild(clonedOption1);
+      secondCol.appendChild(clonedOption2);
+      secondCol.appendChild(clonedOption3);
     }
 
     // About Us
