@@ -44,6 +44,10 @@
     margin: 0 auto;
     margin-top: 45px;
 
+    &:first-child {
+      margin-top: -130px;
+    }
+
     &__img {
       width: 100%;
       aspect-ratio: 2 / 1;
@@ -90,6 +94,71 @@
         h3, p {
           color: white;
         }
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .aboutus {
+    padding: 100px $px-lg;
+    display: flex;
+    align-items: center;
+
+    &__main {
+      margin-top: 0;
+      flex-basis: 20%;
+      text-align: left;
+      background: none;
+      padding: 0;
+      
+      &__title {
+        text-align: left;
+        font-size: 80px;
+        line-height: 85px;
+      }
+    }
+
+    &__first-col {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin-right: 80px;
+
+      &__first-col {
+        margin-right: 50px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &__desktop-img {
+      height: 300px;
+      width: 270px;
+      object-fit: cover;
+      margin-bottom: 30px;
+      &:first-child {
+        margin-left: -10px;
+      }
+    }
+
+    &__card {
+      margin: 0;
+      width: 270px;
+      height: 300px;
+      
+      &__img {
+        display: none;
+      }
+      &__content {
+        padding: 40px 30px;
+        &__text {
+          width: 100%;
+        }
+      }
+      &:first-child {
+        margin-top: 0;
       }
     }
   }

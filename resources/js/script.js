@@ -46,6 +46,26 @@ function changeView(e) {
 
     // Home
     if (window.location.pathname.split('/').pop() === 'index.html') {
+
+      const aboutus = document.querySelector('.aboutus');
+      const aboutusFirstCol = document.querySelector('.aboutus__first-col__first-col');
+      const aboutusSecondCol = document.querySelector('.aboutus__first-col__second-col');
+      const aboutusMain = document.querySelector('.aboutus__main');
+      const cloneAboutusMain = aboutusMain.cloneNode(true);
+      aboutusMain.classList.add('d-none-desktop');
+      cloneAboutusMain.classList.add('only-desktop');
+      aboutus.appendChild(cloneAboutusMain);
+
+      const aboutusImg1 = document.createElement('img');
+      aboutusImg1.classList.add('aboutus__desktop-img', 'only-desktop');
+      aboutusImg1.src = 'resources/img/unsplash-1.jpg';
+      const aboutusImg2 = document.createElement('img');
+      aboutusImg2.classList.add('aboutus__desktop-img', 'only-desktop');
+      aboutusImg2.src = 'resources/img/luxury-room.jpg';
+      
+      aboutusFirstCol.appendChild(aboutusImg1);
+      aboutusSecondCol.insertAdjacentElement('afterbegin', aboutusImg2);
+      
       const video = document.querySelector('.intro-video__video');
       const cloneVideo = video.cloneNode(true);
       video.classList.add('d-none-desktop');
