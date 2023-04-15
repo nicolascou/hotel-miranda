@@ -2,7 +2,7 @@
 
 .cancellation {
   padding: $px-sm;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 
   &__title {
     font-size: 30px;
@@ -18,7 +18,10 @@
 
 @media only screen and (min-width: 1000px) {
   .cancellation {
+    padding: 0;
+    padding-left: 30px;
     margin: 100px $px-lg;
+    margin-bottom: 0;
     margin-right: 40%;
   }
 }

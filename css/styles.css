@@ -1580,6 +1580,7 @@
   .amenities {
     padding: 50px 18%;
     padding-right: 40%;
+    margin-left: 30px;
   }
   .amenities__flex {
     justify-content: space-between;
@@ -1649,7 +1650,7 @@
 }
 .cancellation {
   padding: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .cancellation__title {
   font-size: 30px;
@@ -1663,7 +1664,10 @@
 
 @media only screen and (min-width: 1000px) {
   .cancellation {
+    padding: 0;
+    padding-left: 30px;
     margin: 100px 18%;
+    margin-bottom: 0;
     margin-right: 40%;
   }
 }
