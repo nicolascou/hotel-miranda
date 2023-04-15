@@ -29,10 +29,11 @@
   }
 
   &__video {
-    margin: 30px 0;
+    margin: 30px auto;
     width: 100%;
     min-height: 200px;
     max-height: 300px;
+    max-width: 520px;
     background-color: black;
   }
 

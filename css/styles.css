@@ -598,10 +598,11 @@
   line-height: 24px;
 }
 .intro-video__video {
-  margin: 30px 0;
+  margin: 30px auto;
   width: 100%;
   min-height: 200px;
   max-height: 300px;
+  max-width: 520px;
   background-color: black;
 }
 .intro-video__btn {
@@ -662,6 +663,7 @@
   margin-bottom: 14px;
 }
 .facilities__swiper {
+  max-width: 550px;
   margin-bottom: 40px;
 }
 .facilities__swiper__slide {
