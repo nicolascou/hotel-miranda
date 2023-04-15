@@ -66,7 +66,12 @@
     padding: 60px $px-lg;
     padding-bottom: 30px;
 
+    &__video {
+      max-width: none;
+    }
+
     &__title {
+      max-width: none;
       font-size: 72px;
       line-height: 89px;
       letter-spacing: -2.16px;

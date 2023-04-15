@@ -1166,7 +1166,11 @@
     padding: 60px 18%;
     padding-bottom: 30px;
   }
+  .about-intro__video {
+    max-width: none;
+  }
   .about-intro__title {
+    max-width: none;
     font-size: 72px;
     line-height: 89px;
     letter-spacing: -2.16px;
@@ -1192,6 +1196,8 @@
   padding: 20px;
   padding-bottom: 40px;
   box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
 }
 .restaurant__img {
   width: 100%;
