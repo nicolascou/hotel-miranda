@@ -722,8 +722,8 @@
 @media only screen and (min-width: 1000px) {
   .facilities {
     padding: 100px 18%;
-    padding-bottom: 150px;
     position: relative;
+    padding-bottom: 50px;
   }
   .facilities__title {
     font-size: 80px;
@@ -1114,12 +1114,12 @@
 }
 .about-intro__video {
   width: 100%;
-  max-width: 600px;
+  max-width: 650px;
   box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.25);
 }
 .about-intro__title {
   font-size: 32px;
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto;
   font-weight: 400;
   line-height: 40px;
@@ -1132,7 +1132,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto;
 }
 .about-intro__pick__box {
@@ -1196,7 +1196,7 @@
   padding: 20px;
   padding-bottom: 40px;
   box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto;
 }
 .restaurant__img {
@@ -1238,6 +1238,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: none;
   }
   .restaurant__img {
     width: 50%;
@@ -1249,6 +1250,8 @@
 }
 .counter {
   padding: 0 20px;
+  max-width: 650px;
+  margin: 0 auto;
 }
 .counter__intro {
   color: #777;
@@ -1305,6 +1308,7 @@
   .counter {
     padding: 0 18%;
     margin-bottom: 120px;
+    max-width: none;
   }
   .counter__title {
     font-size: 72px;

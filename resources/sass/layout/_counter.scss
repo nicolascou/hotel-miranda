@@ -2,6 +2,8 @@
 
 .counter {
   padding: 0 $px-sm;
+  max-width: $max-wsm;
+  margin: 0 auto;
   
   &__intro {
     color: $color-text;
@@ -66,6 +68,7 @@
   .counter {
     padding: 0 $px-lg;
     margin-bottom: 120px;
+    max-width: none;
 
     &__title {
       font-size: 72px;

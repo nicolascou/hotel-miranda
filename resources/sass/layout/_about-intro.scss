@@ -7,13 +7,13 @@
 
   &__video {
     width: 100%;
-    max-width: 600px;
+    max-width: $max-wsm;
     box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.25);
   }
 
   &__title {
     font-size: 32px;
-    max-width: 600px;
+    max-width: $max-wsm;
     margin: 0 auto;
     font-weight: 400;
     line-height: 40px;
@@ -27,7 +27,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 600px;
+    max-width: $max-wsm;
     margin: 0 auto;
 
     &__box {
