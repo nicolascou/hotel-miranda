@@ -161,10 +161,10 @@
 @media only screen and (min-width: 1000px) {
   .footer {
     padding: 100px 5%;
+    max-width: $max-wlg;
     padding-bottom: 70px;
     display: flex;
     justify-content: space-between;
-    max-width: $max-wlg;
     margin: 0 auto;
 
     &__first-col {

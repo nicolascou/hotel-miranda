@@ -98,7 +98,9 @@
 
 @media only screen and (min-width: 1000px) {
   .contact {
-    padding: 60px $px-lg;
+    padding: 100px 5%;
+    max-width: $max-wlg;
+    margin: auto;
 
     &__flex {
       flex-direction: row;
@@ -109,6 +111,12 @@
         flex-basis: 33%;
         margin: 0;
       }
+    }
+
+    &__img {
+      display: block;
+      width: 80%;
+      margin: auto;
     }
 
     &__form {
