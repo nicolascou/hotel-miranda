@@ -111,6 +111,12 @@ h1, h2, h3, h4, h5, h6 {
   display: none !important;
 }
 
+.container {
+  max-width: $max-wlg;
+  padding: 0 5%;
+  margin: auto;
+}
+
 @media only screen and (min-width: 1000px) {
   .d-flex-desktop {
     display: flex;
