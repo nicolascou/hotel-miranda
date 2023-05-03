@@ -1,9 +1,12 @@
 @import '../globals';
 
+.popular-rooms-wrapper {
+  background-color: $color-dark;
+}
+
 .popular-rooms {
   padding: 48px $px-sm;
   text-align: center;
-  background-color: $color-dark;
   margin-bottom: 60px;
   
   &__intro {
@@ -71,7 +74,9 @@
 
 @media only screen and (min-width: 1000px) {
   .popular-rooms {
-    padding: 60px $px-lg;
+    padding: 100px 5%;
+    max-width: $max-wlg;
+    margin: auto;
     margin-bottom: 120px;
 
     &__title {

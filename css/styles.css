@@ -1778,7 +1778,9 @@
 
 @media only screen and (min-width: 1000px) {
   .offers-flex {
-    padding: 60px 18%;
+    padding: 100px 5%;
+    max-width: 1400px;
+    margin: auto;
   }
   .offers-flex__box {
     box-shadow: none;
@@ -1828,10 +1830,13 @@
     min-width: 200px;
   }
 }
+.popular-rooms-wrapper {
+  background-color: #222222;
+}
+
 .popular-rooms {
   padding: 48px 20px;
   text-align: center;
-  background-color: #222222;
   margin-bottom: 60px;
 }
 .popular-rooms__intro {
@@ -1891,7 +1896,9 @@
 
 @media only screen and (min-width: 1000px) {
   .popular-rooms {
-    padding: 60px 18%;
+    padding: 100px 5%;
+    max-width: 1400px;
+    margin: auto;
     margin-bottom: 120px;
   }
   .popular-rooms__title {
