@@ -1523,7 +1523,9 @@
 
 @media only screen and (min-width: 1000px) {
   .offer {
-    padding: 100px 18%;
+    padding: 100px 5%;
+    max-width: 1400px;
+    margin: auto;
     display: flex;
     position: relative;
   }
@@ -1540,7 +1542,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    width: 36%;
+    width: 50%;
     padding: 10px 40px;
   }
 }
@@ -1707,7 +1709,9 @@
 
 @media only screen and (min-width: 1000px) {
   .related-rooms {
-    padding: 60px 18%;
+    padding: 100px 5%;
+    max-width: 1400px;
+    margin: auto;
     margin-bottom: 120px;
   }
   .related-rooms__title {

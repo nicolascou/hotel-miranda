@@ -40,7 +40,9 @@
 
 @media only screen and (min-width: 1000px) {
   .related-rooms {
-    padding: 60px $px-lg;
+    padding: 100px 5%;
+    max-width: $max-wlg;
+    margin: auto;
     margin-bottom: 120px;
 
     &__title {
