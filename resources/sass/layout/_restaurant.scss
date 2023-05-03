@@ -52,11 +52,12 @@
   .restaurant {
     margin: 0 $px-lg;
     margin-bottom: 40px;
-    padding: 30px;
+    padding: 30px 5%;
+    max-width: $max-wlg;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: none;
 
     &__img {
       width: 50%;

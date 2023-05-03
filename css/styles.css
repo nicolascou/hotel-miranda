@@ -375,7 +375,9 @@
 
 @media only screen and (min-width: 1000px) {
   .aboutus {
-    padding: 100px 18%;
+    padding: 100px 5%;
+    max-width: 1400px;
+    margin: auto;
     display: flex;
     align-items: center;
   }
@@ -703,7 +705,6 @@
 }
 
 .facilities-black {
-  background-color: #222222;
   margin-bottom: 60px;
 }
 .facilities-black__text {
@@ -719,11 +720,15 @@
   background-color: #292929;
 }
 
+.facilities-black-wrapper {
+  background-color: #222222;
+}
+
 @media only screen and (min-width: 1000px) {
   .facilities {
     padding: 100px 18%;
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   .facilities__title {
     font-size: 80px;
@@ -752,6 +757,13 @@
     margin: 0;
     width: 200px;
     height: 200px;
+  }
+  .facilities-black {
+    padding: 60px 5%;
+    max-width: 1400px;
+    margin: auto;
+    padding-bottom: 0;
+    margin-bottom: 60px;
   }
   .facilities-black__swiper-wrapper {
     display: none;
@@ -1161,7 +1173,9 @@
 
 @media only screen and (min-width: 1000px) {
   .about-intro {
-    padding: 60px 18%;
+    padding: 60px 5%;
+    max-width: 1400px;
+    margin: auto;
     padding-bottom: 30px;
   }
   .about-intro__video {
@@ -1172,7 +1186,7 @@
     font-size: 72px;
     line-height: 89px;
     letter-spacing: -2.16px;
-    margin: 80px auto;
+    margin: 60px auto;
     margin-bottom: 40px;
   }
   .about-intro__pick {
@@ -1232,11 +1246,12 @@
   .restaurant {
     margin: 0 18%;
     margin-bottom: 40px;
-    padding: 30px;
+    padding: 30px 5%;
+    max-width: 1400px;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: none;
   }
   .restaurant__img {
     width: 50%;
@@ -1304,9 +1319,10 @@
 
 @media only screen and (min-width: 1000px) {
   .counter {
-    padding: 0 18%;
+    padding: 0 5%;
+    max-width: 1400px;
+    margin: auto;
     margin-bottom: 120px;
-    max-width: none;
   }
   .counter__title {
     font-size: 72px;

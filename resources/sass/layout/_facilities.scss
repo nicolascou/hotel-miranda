@@ -69,7 +69,6 @@
 }
 
 .facilities-black {
-  background-color: $color-dark;
   margin-bottom: 60px;
   
   &__text {
@@ -89,11 +88,15 @@
   }
 }
 
+.facilities-black-wrapper {
+  background-color: $color-dark;
+}
+
 @media only screen and (min-width: 1000px) {
   .facilities {
     padding: 100px $px-lg;
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 
     &__title {
       font-size: 80px;
@@ -129,6 +132,12 @@
     }
   }
   .facilities-black {
+    padding: 60px 5%;
+    max-width: $max-wlg;
+    margin: auto;
+    padding-bottom: 0;
+    margin-bottom: 60px;
+    
     &__swiper-wrapper {
       display: none;
     }

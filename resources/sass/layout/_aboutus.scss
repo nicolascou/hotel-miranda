@@ -102,7 +102,9 @@
 
 @media only screen and (min-width: 1000px) {
   .aboutus {
-    padding: 100px $px-lg;
+    padding: 100px 5%;
+    max-width: $max-wlg;
+    margin: auto;
     display: flex;
     align-items: center;
 
