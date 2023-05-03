@@ -42,7 +42,8 @@
 
 @media only screen and (min-width: 1000px) {
   .summary {
-    margin: 100px $px-lg;
+    margin: 100px auto;
+    max-width: $max-wlg;
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 130px;

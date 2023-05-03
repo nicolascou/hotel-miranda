@@ -86,7 +86,10 @@
 
 @media only screen and (min-width: 1000px) {
   .menu-section {
-    padding: 0 $px-lg;
+    padding: 60px 5%;
+    padding-bottom: 0;
+    max-width: $max-wlg;
+    margin: auto;
     background-color: transparent;
 
     &__title {
@@ -105,7 +108,7 @@
       align-items: center;
       justify-content: space-between;
       flex-direction: row;
-      margin-bottom: 100px;
+      margin-bottom: 80px;
 
       &__first-col {
         margin-right: 30px;
