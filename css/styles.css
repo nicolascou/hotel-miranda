@@ -1994,8 +1994,8 @@
 .contact__img {
   width: 100%;
   box-shadow: 0px 4px 16px rgba(138, 138, 138, 0.25);
-  max-height: 700px;
   object-fit: cover;
+  height: 300px;
 }
 .contact__form {
   margin: 60px 0;
@@ -2047,8 +2047,9 @@
   }
   .contact__img {
     display: block;
-    width: 80%;
-    margin: auto;
+    width: 90%;
+    margin: 10px auto;
+    height: 600px;
   }
   .contact__form__row {
     display: flex;
